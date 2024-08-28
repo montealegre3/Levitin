@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin-right: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    color: white;
+}
+
+img .logo {
+    height: 70px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.inicio-sesion {
+    background-color: #6497A8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.registro {
+    background-color: #6497A8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.modulos {
+    background-color: #6497A8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #637a81;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #6497A8;
+    border: 1px solid #637a81;
+    z-index: 1000;
+    border-radius: 6px;
+}
+
+.menu-desplegable  a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-desplegable a:hover {
+    background-color: #637a81;
+}
+
+.modulos:focus + .menu-desplegable ,
+.menu-desplegable :hover {
+    display: block;
+}
+
+.img-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6D97A8;
+}
+
+.nosotros p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1b1b1b;
+    margin: 0 40px;
+}
+
+.card-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    margin-top: 50px; 
+    padding: 20px;
+
+}
+
+.card-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    margin-top: 50px; 
+    padding: 20px;
+
+}
+
+.card1 {
+    width: 150px; 
+    height: 250px;
+    background-color: #f9f9f9; 
+    border-right: 5px solid #6D97A8;
+    border-bottom: 5px solid #6D97A8;
+    border-radius: 8px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    text-align: justify;
+}
+
+.card2 {
+    width: 150px; 
+    height: 250px;
+    background-color: #f9f9f9; 
+    border-right: 5px solid #637a81;
+    border-bottom: 5px solid #637a81;
+    border-radius: 8px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.card3 {
+    width: 150px; 
+    height: 250px;
+    background-color: #f9f9f9; 
+    border-right: 5px solid #637a81;
+    border-bottom: 5px solid #637a81;
+    border-radius: 8px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.card4 {
+    width: 150px; 
+    height: 250px;
+    background-color: #f9f9f9; 
+    border-right: 5px solid #637a81;
+    border-bottom: 5px solid #637a81;
+    border-radius: 8px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.card-icon {
+    font-size: 24px;
+    text-align: center;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0; 
+}
+
+.card-text {
+    text-align: center;
+    font-size: 14px; 
+}
+
+.flecha {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+#Texto {
+    font-size: 15px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #6497A8;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 80px;
+    height: 80px;
+}
+
+.social-icons i {
+    color: white;
+}
+
+.contact-email a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}

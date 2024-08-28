@@ -146,12 +146,17 @@ h1 {
     justify-content: center;
 }
 
+.informacion p {
+    margin-top: 50px;
+}
+
 .card-video {
     width: 50%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    margin-top: 30px;
 }
 
 h2 {
@@ -160,7 +165,7 @@ h2 {
 }
 
 .navigation-buttons {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .navigation-buttons button {
