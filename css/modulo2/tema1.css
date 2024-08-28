@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img .logo {
+    height: 50px;
+}
+
+.logo h3 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-family: 'Archivo Narrow';
+    color: #AF69A8;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.inicio-sesion {
+    background-color: #AF69A8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.registro {
+    background-color:#AF69A8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.modulos {
+    background-color:#AF69A8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color:#d883d1;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color:#AF69A8;
+    border: 1px solid #AF69A8;
+    z-index: 1000;
+    border-radius: 6px;
+}
+
+.menu-desplegable  a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-desplegable a:hover {
+    background-color: #d883d1;
+}
+
+.modulos:focus + .menu-desplegable ,
+.menu-desplegable :hover {
+    display: block;
+}
+
+body {
+    font-family: 'Archivo Narrow';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 0%;
+}
+
+.contenido {
+    width: 80%;
+    text-align: center;
+    padding: 5%;
+    font-size: 20px;
+    font-family: 'Archivo Narrow';
+    color: #AF69A8;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0px;
+}
+
+.informacion{
+    font-size: 20px;
+    font-family: 'Archivo Narrow';
+    margin-top: 20px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.card-video {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 100px;
+}
+
+.navigation-buttons {
+    margin-top: 150px;
+}
+
+.navigation-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F8F1D3;
+    color: black;
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    background-color: #ece5cc;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #AF69A8;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 80px;
+    height: 80px;
+}
+
+.social-icons i {
+    color: white;
+}
+
+.contact-email a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
