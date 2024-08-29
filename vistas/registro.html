@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inicio de Sesión</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/10-Levitin-app/css/registro.css">
+    <link rel="stylesheet" href="/css/registro.css">
 </head>
 <body>
     <div class="container">
             <h1>Registrase</h1>
-        <form>
+        <form id="formulario">
             <div class="form-group">
                 <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombreUsuario" name="nombre" required>
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico: </label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="emailUsuario" name="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Contraseña: </label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="contrasenaUsuario" name="password" required>
             </div>
             <div class="form-group">
                 <label for="confirm-password">Confirmar contraseña: </label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
+                <input type="password" id="confirmarContrasena" name="confirm-password" required>
             </div>  
-            <button type="submit">Ingresar</button>
+            <button id="btnRegistro" type="submit">Registrar</button>
         </form>
         
-        <h2>Registrarse con</h2>
+        <a href="/vistas/inicio-sesion.html">¿Ya tienes cuenta? Inicia sesión</a>
         <div class="social-buttons">
             <a href="#" class="social-button google">
                 <i class="fab fa-google"></i> Iniciar sesión con Google
@@ -41,6 +41,6 @@
         </div>
     </div>
 
-    <script src="/10-Levitin-app/js/registro.js"></script>
+    <script src="/js/registro.js"></script>
 </body>
 </html>
