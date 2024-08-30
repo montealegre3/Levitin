@@ -227,6 +227,27 @@ h2 {
     background-color: #ece5cc;
 }
 
+.certificado-button {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 850px;
+}
+
+.certificado-button button{
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DB9E3A;
+    color: white;
+    cursor: pointer;
+}
+
+.certificado-button button:hover {
+    background-color: #e3b770;
+}
+
 
 footer {
     display: flex;
