@@ -10,9 +10,9 @@ function registrarUser(e){
 
     //Registrar el dato de "user" en localStorage
     let user = {
-    userName: nombreUsuario.value,
-    userPass: contraseña.value,
-    userEmail: email.value,
+    userName: nombreUsuario.value.toLowerCase(),
+    userPass: contraseña.value.toLowerCase(),
+    userEmail: email.value.toLowerCase(),
 
 }
 

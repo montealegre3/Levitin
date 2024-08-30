@@ -5,6 +5,7 @@ const contraseña = document.querySelector('#contrasenaUsuario');
 
 
 
+
 //Inicio de sesión 
 function validarUsuario(e) {
     e.preventDefault();
@@ -18,10 +19,10 @@ function validarUsuario(e) {
 
 
 
-    console.log(Boolean(nombreUsuario.value === currentUser.userName));
-    console.log(Boolean(contraseña.value === currentUser.userPass));
+    console.log(Boolean(nombreUsuario.value.toLowerCase() === currentUser.userName));
+    console.log(Boolean(contraseña.value.toLowerCase() === currentUser.userPass));
 
-    if (nombreUsuario.value === currentUser.userName && (contraseña.value === currentUser.userPass)) {
+    if (nombreUsuario.value.toLowerCase() === currentUser.userName && (contraseña.value.toLowerCase() === currentUser.userPass)) {
         console.log('felicidades puedes entrar 😊')
         window.location = "../index.html"
     } else {
@@ -32,4 +33,8 @@ function validarUsuario(e) {
 }
 
 
-formulario.addEventListener('submit', validarUsuario)
+formulario.addEventListener('submit', validarUsuario);
+
+
+
+
