@@ -13,10 +13,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 img .logo {
     height: 50px;
+    cursor: pointer;
 }
 
 .logo h3 {
