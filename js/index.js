@@ -47,24 +47,50 @@ function mostrarResults(results) {
         card.classList.add("card")
     
         card.innerHTML = `
-        <div class="container">
+       
             <div class="card1">
-                <img src="${element.imagen}" alt="animaniacs(serie)">
-                <div class="intro">
-                    <h1>${element.nombre}</h1>
-                    <p>Año: ${element.year}</p>
-                    <p>Género: ${element.genero}</p>
-                    <p>Creador: ${element.creador}</p>
-                    <p>Temporadas: ${element.numeroDetemporadas}</p>
-                    <p>Episodios: ${element.numeroDeEpisodios}</p>
-                </div>
+                <div class="card-icon">${element.icon}</div>
+                <hr class="divider">
+                <h1 id="Texto">MÓDULO 1</h1>
+                <p class="card-text">La introducción a la psicología musical:
+                    Abarcaremos tanto la historia y 
+                    evolución cómo la importancia y
+                    prácticas de la psicología musical</p>
+                <div class="flecha">➡️</div>
             </div>
-        </div> 
+            <div class="card2">
+                <div class="card-icon">🎵</div>
+                <hr class="divider">
+                <h1 id="Texto">MÓDULO 2</h1>
+                <p class="card-text">Percepción musical: Abarcaremos
+                    desde los elementos de la música
+                    (tono, ritmo, melodia y armonía)
+                    hasta el procesamiento auditivo</p>
+                <div class="flecha">➡️</div>
+            </div>
         `
     
         container.appendChild(card);
     })
 }
+
+/* mostrarResults(cardsData) */
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Selecciona todos los elementos con la clase 'flecha'
+    const flechas = document.querySelectorAll('.flecha');
+
+    // Añade un evento de clic a cada flecha
+    flechas.forEach(flecha => {
+        flecha.addEventListener('click', () => {
+            // Obtiene el valor del atributo 'data-link'
+            const link = flecha.getAttribute('data-link');
+            // Redirige al usuario a la página especificada
+            window.location.href = link;
+        });
+    });
+});
 
 
 

@@ -67,6 +67,34 @@ img .logo {
 button:hover {
     background-color:#77aabb;
 }
+.nav .desplegable {
+    position: relative;
+    display: inline-block;
+}
+
+.nav .menu-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #6497A8;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav .menu-desplegable a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav .menu-desplegable a:hover {
+    color: black;
+    background-color: #f1f1f1;
+}
+
+.nav .desplegable:hover .menu-desplegable {
+    display: block;
+}
 
 .desplegable {
     position: relative;
