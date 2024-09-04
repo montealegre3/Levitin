@@ -120,11 +120,10 @@ main {
 .contenido {
     width: 80%;
     text-align: center;
-    padding: 5%;
+    padding: 100px;
     font-size: 20px;
     font-family: 'Archivo Narrow';
     color: #AF69A8;
-    margin-top: 0px;
 }
 
 h1 {

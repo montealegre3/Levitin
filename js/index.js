@@ -9,8 +9,7 @@ const btnIniciarSesion = document.querySelector('#btnIniciarSesion');
 const btnRegistro = document.querySelector('#btnRegistro');
 const saludoUsuario = document.querySelector('#saludo');
 const cerrarSesion = document.querySelector('#cerrar');
-
-
+const container = document.querySelector('.card-container1');
 
 // Verifica si el usuario está registrado 
 function verificarSesion() {
@@ -38,6 +37,44 @@ cerrarSesion.addEventListener('click' , () => {
 })
 
 document.addEventListener('DOMContentLoaded', verificarSesion);
+
+
+
+// Funcion para las cards
+function mostrarResults(results) {
+    results.forEach( element => {
+        let card = document.createElement('div');
+        card.classList.add("card")
+    
+        card.innerHTML = `
+        <div class="container">
+            <div class="card1">
+                <img src="${element.imagen}" alt="animaniacs(serie)">
+                <div class="intro">
+                    <h1>${element.nombre}</h1>
+                    <p>Año: ${element.year}</p>
+                    <p>Género: ${element.genero}</p>
+                    <p>Creador: ${element.creador}</p>
+                    <p>Temporadas: ${element.numeroDetemporadas}</p>
+                    <p>Episodios: ${element.numeroDeEpisodios}</p>
+                </div>
+            </div>
+        </div> 
+        `
+    
+        container.appendChild(card);
+    })
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
