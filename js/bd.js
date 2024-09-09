@@ -84,30 +84,27 @@ let cardsData = [
         icon: '🌟',
         title: 'MÓDULO 1',
         text: 'La introducción a la psicología musical: Abarcaremos tanto la historia y evolución cómo la importancia y prácticas de la psicología musical',
-        container: 'cardContainer1',
-        class: 'card1'
+        link: './vistas/modulo1/tema1.html'
     },
     {
         icon: '🎵',
         title: 'MÓDULO 2',
         text: 'Percepción musical: Abarcaremos desde los elementos de la música (tono, ritmo, melodia y armonía) hasta el procesamiento auditivo',
-        container: 'cardContainer1',
-        class: 'card2'
+        link: './vistas/modulo2/tema1.html'
     },
     {
         icon: '🎧',
         title: 'MÓDULO 3',
         text: 'Música y emociones: Nos adentramos en la musicoterapia y en cómo la música puede evocar sentimientos',
-        container: 'cardContainer2',
-        class: 'card3'
+        link: './vistas/modulo3/tema1.html'
     },
     {
         icon: '📈',
         title: 'MÓDULO 4',
         text: 'Música y memoria: Abarcaremos el efecto de la música en la memoria y la relación entre la música, la nostalgia y los recuerdos emocionales',
-        container: 'cardContainer2',
-        class: 'card4'
+        link: './vistas/modulo4/tema1.html'
     }
 ];
+
 
 

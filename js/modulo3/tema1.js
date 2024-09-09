@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById("podcastModal");
-    var img = document.querySelector(".card-image");
-    var span = document.getElementsByClassName("close")[0];
+    let modal = document.getElementById("podcastModal");
+    let img = document.querySelector(".card-image");
+    let span = document.getElementsByClassName("close")[0];
 
     img.onclick = function() {
         modal.style.display = "block";
@@ -11,11 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = "none";
     }
 
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    
 });
 
 document.getElementById('tema1-btn').onclick = function() {

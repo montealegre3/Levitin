@@ -51,33 +51,20 @@ function mostrarResults(results) {
             <div class="card1">
                 <div class="card-icon">${element.icon}</div>
                 <hr class="divider">
-                <h1 id="Texto">MÓDULO 1</h1>
-                <p class="card-text">La introducción a la psicología musical:
-                    Abarcaremos tanto la historia y 
-                    evolución cómo la importancia y
-                    prácticas de la psicología musical</p>
-                <div class="flecha">➡️</div>
+                <h1 id="Texto">${element.title}</h1>
+                <p class="card-text">${element.text}</p>
+                <div class="flecha" data-link= "${element.link}">➡️</div>
             </div>
-            <div class="card2">
-                <div class="card-icon">🎵</div>
-                <hr class="divider">
-                <h1 id="Texto">MÓDULO 2</h1>
-                <p class="card-text">Percepción musical: Abarcaremos
-                    desde los elementos de la música
-                    (tono, ritmo, melodia y armonía)
-                    hasta el procesamiento auditivo</p>
-                <div class="flecha">➡️</div>
-            </div>
+            
         `
-    
         container.appendChild(card);
     })
 }
 
-/* mostrarResults(cardsData) */
+mostrarResults(cardsData)
 
 
-document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
     // Selecciona todos los elementos con la clase 'flecha'
     const flechas = document.querySelectorAll('.flecha');
 
