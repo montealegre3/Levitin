@@ -1,10 +1,5 @@
 const saludo = document.querySelector('#saludo');
-
 let nombreUsuario = JSON.parse(localStorage.getItem('user'));
-
-saludo.innerHTML = `Hola ${saludo.userName} 🎶🎶`
-
-
 const btnIniciarSesion = document.querySelector('#btnIniciarSesion');
 const btnRegistro = document.querySelector('#btnRegistro');
 const saludoUsuario = document.querySelector('#saludo');
