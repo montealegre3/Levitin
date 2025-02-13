@@ -1,0 +1,131 @@
+/* Estilos header */
+body {
+    padding-top: 80px;
+  }
+
+.menu{
+    padding-top: 80px;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    color: #DB9E3A;
+}
+
+.nav-link:hover{
+    color: #DB9E3A;
+}
+
+.dropdown-item{
+    color: #DB9E3A;
+}
+
+/* Estilo de titulos */
+h1{
+    gap: 1rem;
+    color: #DB9E3A;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+h3{
+    gap: 1rem;
+    color: #DB9E3A;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.title1{
+    gap: 1rem;
+    color: #DB9E3A;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* Estilos section1 */
+.imgMadonna{
+    width: 50%;
+}
+
+
+/* Estilos cajita de comentarios */
+.card-text {
+    text-align: justify;
+    font-size: 0.9rem;
+    color: white; 
+    margin-top: 10px;
+}
+
+.card{
+    border: none;
+    max-width: 650px;
+    height: 350px;
+    margin-top: 50px;
+}
+.card-body2 {
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: #333;
+}
+
+.btn1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    background-color: #DB9E3A; 
+    color: white;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px;
+    border: none; 
+}
+
+.btn1:hover{
+    background-color: #e9bd78;;
+    color: white;
+}
+
+
+/* Estilos navegation-buttons */
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem; 
+}
+
+
+
+/* Estilos footer */
+.footer{
+    background-color: #DB9E3A;
+    margin-top: 150px;
+}
+
+h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}

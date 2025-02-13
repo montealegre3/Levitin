@@ -1,0 +1,168 @@
+body {
+    padding-top: 80px;
+  }
+
+/* Estilos del header */
+.menu{
+    padding-top: 80px;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    color: #6497A8;
+}
+
+.nav-link:hover{
+    color: #6497A8;
+}
+
+.dropdown-item{
+    color: #6497A8;
+}
+
+h1{
+    gap: 1rem;
+    color: #6497A8;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2rem
+}
+
+.imgTodos{
+    width: 80%;
+}
+
+.img2{
+    width: 80%;
+}
+
+h3{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #6497A8;
+}
+
+h2{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1;
+    color: #6497A8;
+}
+
+.imgBethoveen{
+    width: 40%;
+}
+
+.imgMichael{
+    width: 35%;
+}
+
+.imgSelena{
+    width: 30%;
+}
+
+.imgMadonna{
+    width: 30%;
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    background-color: #6a6a9b; 
+    color: white;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px; 
+}
+
+.btn:hover{
+    background-color: #8080BC;
+    color: white;
+}
+
+/* Estilos de las card */
+
+#cards {
+    text-align: center;
+  }
+  
+.small-card {
+    width: 250px;
+    height: 300px;
+    border: none;
+    background-color:  #6497A8;
+  }
+  
+.bi{
+    font-size: 4rem;
+    color: white; 
+}
+  
+.small-card .card-body {
+    padding: 50px;
+  }
+  
+.card-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: white; 
+    margin-top: 10px;
+}
+
+.card{
+    border: none;
+    max-width: 650px;
+    height: 350px;
+    margin-top: 50px;
+}
+.card-body2 {
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: #333;
+}
+
+.bi2{
+    color: #6497A8;
+    font-size: 10rem;
+}
+
+.footer{
+    background-color: #6497A8;
+    margin-top: 150px;
+}
+
+h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}
+
+  

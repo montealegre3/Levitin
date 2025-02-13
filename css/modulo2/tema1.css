@@ -1,0 +1,98 @@
+/* Estilos header */
+body {
+    padding-top: 80px;
+  }
+
+.menu{
+    padding-top: 80px;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    color: #8080BC;
+}
+
+.nav-link:hover{
+    color: #8080BC;
+}
+
+.dropdown-item{
+    color: #8080BC;
+}
+
+/* Estilos title1 */
+.title1{
+    color: #8080BC;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* Estilos section1 */
+h1{
+    gap: 1rem;
+    color: #8080BC;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2rem
+}
+.card-text {
+    text-align: justify;
+    font-size: 0.9rem;
+    color: white; 
+    margin-top: 10px;
+}
+
+.card{
+    border: none;
+    max-width: 650px;
+    height: 350px;
+    margin-top: 50px;
+}
+.card-body2 {
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: #333;
+}
+
+/* Estilos navegation-buttons */
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem; 
+}
+
+
+/* Estilos footer */
+.footer{
+    background-color: #8080BC;
+    margin-top: 150px;
+}
+
+h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}

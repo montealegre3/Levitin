@@ -1,0 +1,111 @@
+/* Estilos header */
+body {
+    padding-top: 80px;
+  }
+
+.menu{
+    padding-top: 80px;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    color: #6497A8;
+}
+
+.nav-link:hover{
+    color: #6497A8;
+}
+
+.dropdown-item{
+    color: #6497A8;
+}
+
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Estilos section1 */
+
+h1{
+    gap: 1rem;
+    color: #6497A8;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2rem
+}
+
+.title1{
+    gap: 1rem;
+    color: #6497A8;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.ratio{
+    width: 80%;
+}
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    background-color: #6a6a9b; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px; 
+}
+
+.btn:hover{
+    background-color: #8080BC;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos footer */
+
+.footer{
+    background-color: #6497A8;
+    margin-top: 150px;
+}
+
+.footer h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}

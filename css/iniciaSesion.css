@@ -1,0 +1,15 @@
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-title {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+}
+
+.row{
+    background-image: url('/multimedia/TODOS_Mesa\ de\ trabajo\ 1-01.webp') no-repeat center center;
+}
