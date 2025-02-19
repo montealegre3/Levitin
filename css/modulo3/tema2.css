@@ -49,6 +49,7 @@ h3{
 .img-hover {
     transition: transform 0.3s ease;
     cursor: pointer;
+    max-width: 150px;
 }
 
 .img-hover:hover {
