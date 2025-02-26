@@ -1,15 +1,87 @@
-.form-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+* {
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.form-title {
-    font-family: 'Archivo Narrow', sans-serif;
+body {
+    background-color: #6497A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.226);
+}
+
+.contenedor h2 {
+    color: #6497A8;
     text-align: center;
 }
 
-.row{
-    background-image: url('/multimedia/TODOS_Mesa\ de\ trabajo\ 1-01.webp') no-repeat center center;
+.input-contenedor {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 2px solid #6497A8;
+}
+
+.input-contenedor input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    color: #6497A8;
+}
+
+.input-contenedor i {
+    position: absolute;
+    color: #6497A8;
+    font-size: 1.2rem;
+    top: 12px;
+    right: 10px;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: #6497A8;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+    color: white;
+}
+
+button:hover {
+    background-color: #5b8b9b;
+}
+
+.registrar {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.registrar p a {
+    text-decoration: none;
+    color: #6497A8;
+    font-weight: bold;
+}
+
+.registrar p a:hover {
+    text-decoration: underline;
 }
