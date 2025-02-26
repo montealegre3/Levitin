@@ -1,0 +1,111 @@
+/* Estilos header */
+body {
+    padding-top: 80px;
+  }
+
+.menu{
+    padding-top: 80px;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    color: #AF69A8;
+}
+
+.nav-link:hover{
+    color:  #AF69A8;
+}
+
+.dropdown-item{
+    color:  #AF69A8;
+}
+
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/* Estilos de titulos */
+
+h1{
+    gap: 1rem;
+    color:  #AF69A8;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2rem
+}
+
+h5{
+    color:  #AF69A8;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+/* Estilos de textos */
+.parrafo{
+    color: black;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/* Estilos de botón */
+
+.btn1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    background-color: #AF69A8; 
+    color: white;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px;
+    border: none; 
+}
+
+.btn1:hover{
+    background-color: #c278ba;
+    color: white;
+}
+
+
+/*Estilos footer */
+
+.footer{
+    background-color:  #AF69A8;
+    margin-top: 150px;
+}
+
+.footer h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}
