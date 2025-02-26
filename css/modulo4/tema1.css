@@ -3,7 +3,7 @@ body {
     padding-top: 80px;
   }
 
-  .menu{
+.menu{
     padding-top: 80px;
 }
 
@@ -70,6 +70,8 @@ body {
   .dropdown-submenu .dropdown-menu.show {
     display: block;
   }
+
+
 /* Estilo de titulos */
 h1{
     gap: 1rem;

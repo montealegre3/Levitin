@@ -18,17 +18,58 @@ body {
 }
 
 .nav-link:hover{
-    color:  #AF69A8;
+    color: #AF69A8;
 }
 
 .dropdown-item{
-    color:  #AF69A8;
+    color: #AF69A8;
 }
 
-.btn{
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 1.2rem;
+.dropdown-menu .submenu{
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
 }
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+.dropdown-menu .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+@media(max-width:800px) {
+    .dropdown-menu .submenu {
+        left: 30%;
+        top: 0px;
+    }
+
+    .dropdown-menu .multi-menu {
+        left: 30%;
+    }
+
+    .dropdown-menu .submenu-left {
+        left: 0%;
+    }
+} */
+
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    display: none;
+  }
+  
+  .dropdown-submenu .dropdown-menu.show {
+    display: block;
+  }
 
 
 /* Estilos de titulos */

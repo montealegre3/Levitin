@@ -92,14 +92,14 @@ h1{
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem;
-    background-color: #6a6a9b; 
+    background-color: #5a8796; 
     color: white;
     padding: 10px 20px;
     border-radius: 4px; 
 }
 
 .btn:hover{
-    background-color: #8080BC;
+    background-color: #6497A8;
     color: white;
 }
 
