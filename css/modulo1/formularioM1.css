@@ -1,3 +1,4 @@
+/* Estilos header */
 body {
     padding-top: 80px;
   }
@@ -24,11 +25,18 @@ body {
     color: #6497A8;
 }
 
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/* Estilos de titulos */
+
 h1{
     gap: 1rem;
     color: #6497A8;
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 2rem
 }
 
 h5{
@@ -36,12 +44,116 @@ h5{
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-h3{
-    color: #6497A8;
+
+/* Estilos de textos */
+.parrafo{
+    color: black;
     font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+    text-align: justify;
 }
 
-.btn{
+
+/* Estilos de botón */
+
+.btn1{
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    background-color: #6497A8; 
+    color: white;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px;
+    border: none; 
 }
+
+.btn1:hover{
+    background-color: #497d8f;
+    color: white;
+}
+
+
+/*Estilos footer */
+
+.footer{
+    background-color: #6497A8;
+    margin-top: 150px;
+}
+
+.footer h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}
+
+/* Estilos de párrafo */
+
+.parrafo{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+}
+
+.parrafo1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* Estilos footer */
+
+.footer{
+    background-color: #6497A8;
+    margin-top: 150px;
+}
+
+.footer h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}
+
