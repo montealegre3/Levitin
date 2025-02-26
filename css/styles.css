@@ -69,8 +69,24 @@ body {
   
   .dropdown-submenu .dropdown-menu.show {
     display: block;
-  }
-  
+}
+
+/*Estilos menú lateral */
+
+.offcanvas{
+    background-color: white;
+}
+
+.btnMenu{
+    background-color: white;
+    border: none;
+}
+
+.bi-person-fill {
+    background-color: #6497A8;
+}
+
+/* Estilo section1 */
 
 h1{
     gap: 1rem;
@@ -180,6 +196,8 @@ h2{
     color: #6497A8;
     font-size: 10rem;
 }
+
+/* Estilos footer */
 
 .footer{
     background-color: #6497A8;

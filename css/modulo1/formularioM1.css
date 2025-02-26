@@ -37,7 +37,6 @@ h1{
     gap: 1rem;
     color: #6497A8;
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 2rem
 }
 
 h5{
@@ -109,3 +108,52 @@ h5{
 .col-md-5 .list-inline-item i{
     font-size: 1.5rem;
 }
+
+/* Estilos de párrafo */
+
+.parrafo{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+}
+
+.parrafo1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* Estilos footer */
+
+.footer{
+    background-color: #6497A8;
+    margin-top: 150px;
+}
+
+.footer h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
+}
+
