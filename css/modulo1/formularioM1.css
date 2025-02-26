@@ -18,11 +18,11 @@ body {
 }
 
 .nav-link:hover{
-    color: #6497A8;
+    color:  #6497A8;
 }
 
 .dropdown-item{
-    color: #6497A8;
+    color:  #6497A8;
 }
 
 .btn{
@@ -35,12 +35,13 @@ body {
 
 h1{
     gap: 1rem;
-    color: #6497A8;
+    color:  #6497A8;
     font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2rem
 }
 
 h5{
-    color: #6497A8;
+    color:  #6497A8;
     font-family: 'Archivo Narrow', sans-serif;
 }
 
@@ -70,7 +71,7 @@ h5{
 }
 
 .btn1:hover{
-    background-color: #497d8f;
+    background-color: #5d8d9c;
     color: white;
 }
 
@@ -78,7 +79,7 @@ h5{
 /*Estilos footer */
 
 .footer{
-    background-color: #6497A8;
+    background-color:  #6497A8;
     margin-top: 150px;
 }
 
@@ -108,52 +109,3 @@ h5{
 .col-md-5 .list-inline-item i{
     font-size: 1.5rem;
 }
-
-/* Estilos de párrafo */
-
-.parrafo{
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 20px;
-}
-
-.parrafo1{
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 16px;
-}
-
-
-
-/* Estilos footer */
-
-.footer{
-    background-color: #6497A8;
-    margin-top: 150px;
-}
-
-.footer h5{
-    font-family: 'Archivo Narrow', sans-serif;
-    text-align: left;
-    color: white;
-}
-
-.footer p{
-    font-size: 1rem;
-    text-align: left;
-}
-
-.footer a{
-    text-decoration: none;
-}
-
-.col-md-5 .list-inline{
-    margin-top: 10px;
-}
-
-.col-md-5 .list-inline-item{
-    display: inline-block;
-}
-
-.col-md-5 .list-inline-item i{
-    font-size: 1.5rem;
-}
-
