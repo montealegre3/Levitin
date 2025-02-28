@@ -96,6 +96,13 @@ h3{
     width: 80%;
 }
 
+.carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 /* Estilos formulario */
 .card-text {
