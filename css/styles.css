@@ -88,6 +88,33 @@ body {
 
 /* Estilo section1 */
 
+
+/* Estilos del siderbar */ 
+.sidebar{
+    background-color: #6497A8;
+    width: max-content;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.sidebar_list{
+    list-style: none;
+    padding: 0;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_element{
+    padding: .8rem 1.3rem;
+    border-radius: 3px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    
+}
+
+
 h1{
     gap: 1rem;
     color: #6497A8;
