@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    padding: 15px 30px;
+    font-size: 1.40rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     background-color: #6497A8;
     display: flex;
