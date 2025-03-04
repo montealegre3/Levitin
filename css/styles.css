@@ -69,51 +69,93 @@ body {
   
   .dropdown-submenu .dropdown-menu.show {
     display: block;
+  }
+  
+/* Menu lateral */ 
+
+/* Asegurar que el usuario-icon esté visible siempre */
+.user-menu-container {
+    position: absolute;
+    right: 70px; /* Lo movemos a la derecha */
+    top: 50px;
+    z-index: 1050;
 }
 
-/*Estilos menú lateral */
-
-.offcanvas{
-    background-color: white;
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.btnMenu{
-    background-color: white;
-    border: none;
+/* Estilos del menú lateral */
+.user-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Oculto fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 2000;
 }
 
-.bi-person-fill {
-    background-color: #6497A8;
-}
-
-/* Estilo section1 */
-
-
-/* Estilos del siderbar */ 
-.sidebar{
-    background-color: #6497A8;
-    width: max-content;
-    border-radius: 10px;
-    padding: 2rem 1rem;
-}
-
-.sidebar_list{
+.user-menu ul {
     list-style: none;
     padding: 0;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
 }
 
-.sidebar_element{
-    padding: .8rem 1.3rem;
-    border-radius: 3px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 40px 1fr;
-    
+.user-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
 }
 
+.user-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.user-menu li:hover {
+    background: #f5f5f5;
+}
+
+/* Fondo oscuro cuando el menú está abierto */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto por defecto */
+    z-index: 1500;
+}
+
+/* Mostrar el menú cuando esté activo */
+.user-menu.show {
+    right: 0;
+}
+
+#overlay.show {
+    display: block;
+}
+
+/* Ajustar el ícono de usuario en pantallas pequeñas */
+@media (max-width: 768px) {
+    .user-menu-container {
+        right: 80px;
+    }
+
+    .user-menu {
+        width: 200px; /* Más pequeño en móviles */
+    }
+}
+
+/* Terminan los estilos del menu lateral */
 
 h1{
     gap: 1rem;
