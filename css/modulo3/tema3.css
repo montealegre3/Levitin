@@ -71,6 +71,117 @@ body {
     display: block;
   }
 
+/* Menu lateral */ 
+
+/* Asegurar que el usuario-icon esté visible siempre */
+.user-menu-container {
+    position: absolute;
+    right: 70px; /* Lo movemos a la derecha */
+    top: 50px;
+    z-index: 1050;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Estilos del menú lateral */
+.user-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Oculto fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 2000;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h6 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
+    color: #6497A8;
+    display: block;
+    font-size: 20px;
+}
+
+.user-menu p {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+}
+
+.user-menu li:hover {
+    background: #f5f5f5;
+}
+
+/* Fondo oscuro cuando el menú está abierto */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto por defecto */
+    z-index: 1500;
+}
+
+/* Mostrar el menú cuando esté activo */
+.user-menu.show {
+    right: 0;
+}
+
+#overlay.show {
+    display: block;
+}
+
+/* Ajustar el ícono de usuario en pantallas pequeñas */
+@media (max-width: 768px) {
+    .user-menu-container {
+        right: 80px;
+    }
+
+    .user-menu {
+        width: 200px; /* Más pequeño en móviles */
+    }
+}
+
+/* Estilos btn menu lateral */
+
+.btn1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    background-color: #6a6a9b; 
+    color: white;
+    font-size: 1rem; 
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px; 
+}
+
+.btn1:hover{
+    background-color: #8080BC;
+    color: white;
+}
+
+/* Terminan los estilos del menu lateral */
+
 
 /* Estilos titulos */
 .title1{

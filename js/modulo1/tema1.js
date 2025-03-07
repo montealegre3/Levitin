@@ -46,5 +46,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Menú lateral (resultado definitivo)
+
+document.addEventListener("DOMContentLoaded", function () {
+  const userIcon = document.getElementById("user-icon");
+  const userMenu = document.getElementById("user-menu");
+  const overlay = document.getElementById("overlay");
+
+  userIcon.addEventListener("click", function (event) {
+      event.preventDefault();
+      userMenu.classList.toggle("show");
+      overlay.classList.toggle("show");
+  });
+
+  overlay.addEventListener("click", function () {
+      userMenu.classList.remove("show");
+      overlay.classList.remove("show");
+  });
+});
+
+
   
   

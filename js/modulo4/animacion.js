@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       element.addEventListener("click", function (e) {
         e.preventDefault(); // Evita que la página recargue
         e.stopPropagation(); // Evita que el menú principal se cierre
-  
+
         let submenu = this.nextElementSibling;
         if (submenu.classList.contains("show")) {
           submenu.classList.remove("show");
@@ -17,16 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
-  
+
     // Cierra el submenú si se hace clic fuera de él
     document.addEventListener("click", function () {
       document.querySelectorAll(".dropdown-submenu .dropdown-menu").forEach(function (el) {
         el.classList.remove("show");
       });
     });
-  });
-  
-  // Menú lateral (resultado definitivo)
+});
+
+// Menú lateral (resultado definitivo)
 
 document.addEventListener("DOMContentLoaded", function () {
   const userIcon = document.getElementById("user-icon");
