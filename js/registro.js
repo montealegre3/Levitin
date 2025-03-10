@@ -6,23 +6,26 @@ const formulario = document.querySelector('#formulario1');
 function registrarUsuario(e) {
     e.preventDefault();
 
-    const usuario = {
+    let usuario = {
         userN: userName.value.trim(),
         userE: email.value.trim(),
         userP: password.value.trim()
     };
 
-    // Verifica si ya existe un usuario con el mismo correo
-    if (localStorage.getItem(usuario.userE)) {
+    // Obtener lista de usuarios guardados en localStorage
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || {};
+
+    if (usuarios[usuario.userE]) {
         alert("Este correo ya está registrado. Usa otro o inicia sesión.");
         return;
     }
 
-    localStorage.setItem(usuario.userE, JSON.stringify(usuario));
+    // Guardar usuario en la lista de usuarios
+    usuarios[usuario.userE] = usuario;
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
     alert("Registro exitoso. Ahora puedes iniciar sesión.");
     formulario.reset();
-
-    // Redirigir a la página de inicio de sesión
     window.location.href = "./iniciaSesion.html";
 }
 

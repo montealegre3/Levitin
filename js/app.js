@@ -44,3 +44,19 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.classList.remove("show");
   });
 });
+ 
+// Saludo personalizado 
+const titulo = document.querySelector("#titulo");
+
+let usuario = JSON.parse(localStorage.getItem("usuarioActivo"));
+
+if (usuario) {
+    titulo.textContent = `Hola ${usuario.userN}`;
+} else {
+    titulo.textContent = "¡Bienvenido!";
+}
+
+
+
+
+

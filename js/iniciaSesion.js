@@ -5,13 +5,15 @@ const formulario = document.querySelector('#formulario1');
 function iniciarSesion(e) {
     e.preventDefault();
 
-    const usuarioGuardado = Object.values(localStorage).map(item => JSON.parse(item))
-        .find(user => user.userN === userName.value.trim() && user.userP === password.value.trim());
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || {};
+    let usuarioEncontrado = Object.values(usuarios).find(
+        user => user.userN === userName.value.trim() && user.userP === password.value.trim()
+    );
 
-    if (usuarioGuardado) {
-        localStorage.setItem("usuarioActivo", JSON.stringify(usuarioGuardado));
-        alert(`Bienvenido, ${usuarioGuardado.userN}!`);
-        window.location.href = "../index.html"; // Redirige a la página principal
+    if (usuarioEncontrado) {
+        localStorage.setItem("usuarioActivo", JSON.stringify(usuarioEncontrado));
+        alert(`Bienvenido, ${usuarioEncontrado.userN}!`);
+        window.location.href = "../index.html";
     } else {
         alert("Usuario o contraseña incorrectos.");
     }
