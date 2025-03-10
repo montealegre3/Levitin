@@ -113,6 +113,7 @@ h5{
     transition: right 0.3s ease-in-out;
     padding-top: 60px;
     z-index: 2000;
+    overflow-y: auto;
 }
 
 .user-menu ul {
