@@ -9,19 +9,26 @@ function registrarUsuario(e) {
     let usuario = {
         userN: userName.value.trim(),
         userE: email.value.trim(),
-        userP: password.value.trim()
+        userP: password.value.trim(),
+        logged: false,
     };
 
     // Obtener lista de usuarios guardados en localStorage
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || {};
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    if (usuarios[usuario.userE]) {
-        alert("Este correo ya está registrado. Usa otro o inicia sesión.");
-        return;
+    //Recorre el array usuarios para saber si el correo ya existe
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].userE === email.value.trim()) {
+            alert("Este correo ya está registrado. Usa otro o inicia sesión.");
+            formulario.reset();
+            return;
+        }
     }
 
+    
+
     // Guardar usuario en la lista de usuarios
-    usuarios[usuario.userE] = usuario;
+    usuarios.push(usuario)
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
     alert("Registro exitoso. Ahora puedes iniciar sesión.");
