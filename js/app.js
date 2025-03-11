@@ -45,18 +45,54 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
  
-// Saludo personalizado 
+// Saludo (nombre y correo de usuario) 
 const titulo = document.querySelector("#titulo");
+const correoTitulo = document.querySelector("#correoTitulo");
 
 let usuario = JSON.parse(localStorage.getItem("usuarioActivo"));
 
 if (usuario) {
-    titulo.textContent = `Hola ${usuario.userN}`;
+    titulo.textContent = `Nombre: ${usuario.userN}`;
+    correoTitulo.textContent = `Correo: ${usuario.userE}`;
 } else {
     titulo.textContent = "¡Bienvenido!";
 }
 
+//Cerrar sesión 
+
+const btnCerrar = document.querySelector('.btnCerrar');
+
+function cerrarSesion (){
+  window.location = "../vistas/cerrar.html"
+}
+
+btnCerrar.addEventListener("click", cerrarSesion)
 
 
+// Mostrar u ocultar botones cuando el usuario inicie sesión 
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Seleccionamos los elementos del DOM
+  const btnRegistro = document.querySelector('#btnRegistro');
+  const btnIniciarSesion = document.querySelector('#btnIniciar');
+  const btnModulos = document.querySelector('#btnModulos');
+  const userIcon = document.querySelector("#user-icon");
+  
 
+  // Verificamos si el usuario ha iniciado sesión
+  const usuarioAutenticado = localStorage.getItem("usuarioAutenticado"); // true o false
+
+  if (usuarioAutenticado === "true") {
+      // Usuario autenticado: Mostrar módulos e icono de usuario, ocultar registro e inicio de sesión
+      btnModulos.style.display = "block";
+      userIcon.style.display = "block";
+      btnRegistro.style.display = "none";
+      btnIniciarSesion.style.display = "none";
+  } else {
+      // Usuario NO autenticado: Mostrar registro e inicio de sesión, ocultar módulos e icono de usuario
+      btnModulos.style.display = "none";
+      userIcon.style.display = "none";
+      btnRegistro.style.display = "block";
+      btnIniciarSesion.style.display = "block";
+  }
+});

@@ -77,8 +77,6 @@ body {
 
 /* Asegurar que el usuario-icon esté visible siempre */
 .user-menu-container {
-    position: absolute;
-    right: 70px; /* Lo movemos a la derecha */
     top: 50px;
     z-index: 1050;
 }
@@ -152,17 +150,6 @@ h6 {
 
 #overlay.show {
     display: block;
-}
-
-/* Ajustar el ícono de usuario en pantallas pequeñas */
-@media (max-width: 768px) {
-    .user-menu-container {
-        right: 80px;
-    }
-
-    .user-menu {
-        width: 200px; /* Más pequeño en móviles */
-    }
 }
 
 /* Terminan los estilos del menu lateral */
@@ -273,8 +260,9 @@ h2{
   }
   
 .card-text {
+    font-family: 'Archivo narrow' , sans-serif;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: white; 
     margin-top: 10px;
 }
@@ -310,6 +298,7 @@ h5{
 }
 
 .footer p{
+    font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem;
     text-align: left;
 }
