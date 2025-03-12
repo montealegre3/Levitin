@@ -25,8 +25,6 @@ function registrarUsuario(e) {
         }
     }
 
-    
-
     // Guardar usuario en la lista de usuarios
     usuarios.push(usuario)
     localStorage.setItem("usuarios", JSON.stringify(usuarios));

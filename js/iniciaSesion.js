@@ -37,9 +37,3 @@ function iniciarSesion(e) {
 }
 
 formulario.addEventListener("submit", iniciarSesion);
-
-
-for (let i = 0; i < array.length; i++) {
-    
-    
-}
