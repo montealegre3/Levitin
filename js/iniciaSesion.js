@@ -6,9 +6,6 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 function iniciarSesion(e) {
     e.preventDefault();
-   /*  let usuarioEncontrado = Object.values(usuarios).find(
-        user => user.userN === userName.value.trim() && user.userP === password.value.trim()
-    ); */
 
     //Para saber si el usuario existe
 
@@ -41,3 +38,8 @@ function iniciarSesion(e) {
 
 formulario.addEventListener("submit", iniciarSesion);
 
+
+for (let i = 0; i < array.length; i++) {
+    
+    
+}
