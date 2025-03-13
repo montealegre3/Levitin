@@ -194,17 +194,11 @@ h3{
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-/* Estilos selena-expresiones */
-.img-hover {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    max-width: 150px;
+/* Estilos navegation-buttons */
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem; 
 }
-
-.img-hover:hover {
-    transform: scale(1.1);
-}
-
 
 
 /* Estilos footer */

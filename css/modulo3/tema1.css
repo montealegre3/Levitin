@@ -236,7 +236,11 @@ h3{
     color: white;
 }
 
-
+/* Estilos navegation-buttons */
+.btn{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem; 
+}
 
 
 /* Estilos footer */
