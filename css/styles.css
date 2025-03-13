@@ -125,6 +125,14 @@ h6 {
 .user-menu p {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 18px;
+    text-decoration: none;
+}
+
+.user-menu a {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 
 .user-menu li:hover {

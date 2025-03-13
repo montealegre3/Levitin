@@ -127,6 +127,13 @@ h6 {
     font-size: 18px;
 }
 
+.user-menu a {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
 .user-menu li:hover {
     background: #f5f5f5;
 }
