@@ -1,6 +1,28 @@
+/* 
+1. Al momento de visualizar la página, si el usuario no está registrado podrá observar el contenido del index y tendrá reflejado los botones de 
+inicia sesión y registro, pero no podrá ver los botones de dashborad y módulos, en cambio si el usuario está registrado ya no verá los 
+botones de registrarse e iniciar sesión, sino que verá los botones de dashboard y módulos
+
+2. En la sección de "lo que aprenderás" hay unos botones que dicen "ver más", si el usuario no está registrado y da click en cualquiera de esos botones, solo 
+podrá visualizar el contenido que será visible en esa página, visualizando los botones de registrar e iniciar sesión y no verá los botones de dashboard y módulos,
+además, si estando en esa página da click en el boton "comienza" no podrá visualizar el contenido del módulo hasta que se registre
+
+3. Si el usuario está registrado podrá estudiar todo el contenido de los módulos en el orden que desee, pero, si no está registrado, no podrá estudiar 
+el contenido de los módulos hasta que se registre. Cada módulo es aprobado una vez que el usuario haya completado el formulario que se presenta al 
+finalizar cada módulo. Si el usuario estudia todos los módulos sin realizar los formularios, en la sección del dashboard "módulos aprobados" y "formularios aprobados"
+se verá reflejado un icono de candado, dando a entender que no han sido completados en su totalidad, en cambio, si el usuario estudia los módulos y realiza los formularios, 
+en la sección del dashboard "módulos aprobados" y "formularios aprobados" se activará un icono de check, dando a entender que ha completado en su totalildad cada módulo 
+
+4. Durante todo el desarrollo del curso hay unas cajitas de comentario, el usuario es libre de decidir si quiere o no quiere responder las preguntas o comentar lo que desee,
+es opcional 
+
+*/
+
+
+
+
+
 //Código para la funcionalidad del menu dropwdom
-
-
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".dropdown-submenu .dropdown-toggle").forEach(function (element) {
     element.addEventListener("click", function (e) {
@@ -105,10 +127,4 @@ document.addEventListener("DOMContentLoaded", function () {
   userIcon.style.display = "none";
   btnRegistro.style.display = "block";
   btnIniciarSesion.style.display = "block";
-
-
-
-
-
-
 });
