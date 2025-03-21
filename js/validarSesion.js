@@ -5,7 +5,7 @@ export function validarSesion(){
     const btnRegistro = document.querySelector('#btnRegistro');
     const btnIniciarSesion = document.querySelector('#btnIniciar');
     const btnModulos = document.querySelector('#btnModulos');
-    const userIcon = document.querySelector("#user-icon");
+    const userIcon = document.querySelector("#icon");
   
   
     // Verificamos si el usuario ha iniciado sesión
@@ -44,3 +44,5 @@ export function validarSesion(){
     btnRegistro.style.display = "block";
     btnIniciarSesion.style.display = "block";
 }
+
+

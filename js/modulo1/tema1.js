@@ -1,3 +1,6 @@
+import { validarSesion } from "../validarSesion.js";
+validarSesion()
+
 document.addEventListener("DOMContentLoaded", () => {
     const sorprendido = document.querySelector(".beethoven.sorprendido");
     const feliz = document.querySelector(".beethoven.feliz");
