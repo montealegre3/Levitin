@@ -91,15 +91,33 @@ h5{
 /* Asegurar que el usuario-icon esté visible siempre */
 .user-menu-container {
     top: 50px;
-    z-index: 1050;
+    z-index: 1050; 
+}
+
+#icon {
+    text-decoration: none;
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
 }
 
 .user-icon {
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    height: 50px; 
+    border-radius: 50%; 
     cursor: pointer;
+    margin-right: 10px; 
 }
+
+h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
+    color: #6497A8;
+    display: block;
+    margin: 0;
+    font-size: 23px; 
+}
+/*
 
 /* Estilos del menú lateral */
 .user-menu {
@@ -138,6 +156,13 @@ h5 {
 .user-menu p {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 18px;
+}
+
+.user-menu a {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 
 .user-menu li:hover {

@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Menú lateral (resultado definitivo)
 
 document.addEventListener("DOMContentLoaded", function () {
-  const userIcon = document.getElementById("user-icon");
+  const userIcon = document.getElementById("icon");
   const userMenu = document.getElementById("user-menu");
   const overlay = document.getElementById("overlay");
 

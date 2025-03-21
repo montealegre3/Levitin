@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Menú lateral (resultado definitivo)
 
 document.addEventListener("DOMContentLoaded", function () {
-  const userIcon = document.getElementById("user-icon");
+  const userIcon = document.getElementById("icon");
   const userMenu = document.getElementById("user-menu");
   const overlay = document.getElementById("overlay");
 
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnRegistro = document.querySelector('#btnRegistro');
   const btnIniciarSesion = document.querySelector('#btnIniciar');
   const btnModulos = document.querySelector('#btnModulos');
-  const userIcon = document.querySelector("#user-icon");
+  const userIcon = document.querySelector("#icon");
 
 
   // Verificamos si el usuario ha iniciado sesión
@@ -105,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (confirmarSesion) {
       // Usuario autenticado: Mostrar módulos e icono de usuario, ocultar registro e inicio de sesión
       btnModulos.style.display = "block";
-      userIcon.style.display = "block";
       btnRegistro.style.display = "none";
       btnIniciarSesion.style.display = "none";
 
