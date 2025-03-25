@@ -1,3 +1,8 @@
+import { validarSesion } from "../validarSesion.js";
+
+validarSesion()
+
+
 //Código para la funcionalidad del menu dropwdom
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,7 +1,8 @@
 import { validarSesion } from "../validarSesion.js";
+
 validarSesion()
 
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
     const sorprendido = document.querySelector(".beethoven.sorprendido");
     const feliz = document.querySelector(".beethoven.feliz");
   
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         feliz.style.opacity = 0;
       }
     }, 1000); //Tiempo de duración 
-  });
+  }); */
 
 //Código para la funcionalidad del menu dropwdom
 
@@ -48,26 +49,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // Menú lateral (resultado definitivo)
 
 document.addEventListener("DOMContentLoaded", function () {
-  const userIcon = document.getElementById("icon");
-  const userMenu = document.getElementById("user-menu");
-  const overlay = document.getElementById("overlay");
+const userIcon = document.getElementById("icon");
+const userMenu = document.getElementById("user-menu");
+const overlay = document.getElementById("overlay");
 
-  userIcon.addEventListener("click", function (event) {
-      event.preventDefault();
-      userMenu.classList.toggle("show");
-      overlay.classList.toggle("show");
-  });
-
-  overlay.addEventListener("click", function () {
-      userMenu.classList.remove("show");
-      overlay.classList.remove("show");
-  });
+userIcon.addEventListener("click", function (event) {
+    event.preventDefault();
+    userMenu.classList.toggle("show");
+    overlay.classList.toggle("show");
 });
 
+overlay.addEventListener("click", function () {
+    userMenu.classList.remove("show");
+    overlay.classList.remove("show");
+});
+});
 
   
   

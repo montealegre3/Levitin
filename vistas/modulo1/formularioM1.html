@@ -96,13 +96,14 @@
       <div id="user-menu" class="user-menu p-3">
         <ul class="list-unstyled">
             <li class="mb-3">
-                <h5>Mi perfil</h5>
-                <p><strong>Nombre:</strong> <br> <strong>Correo:</strong></p>
+              <h5>Mi perfil</h5>
+              <p id="titulo">Nombre: usuario</p>
+              <p id="correoTitulo">Correo: </p>
             </li>
             <li class="mb-3">
                 <h5>Tu progreso:</h5>
                 <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 25%">25%</div>
+                    <div class="progress-bar">25%</div>
                 </div>
             </li>
             <li class="mb-3">
@@ -139,10 +140,9 @@
 
       <!-- Botones finales -->
       <div class="d-flex flex-column align-items-center gap-2">
-        <button class="btn btn-sm">Reclamar certificado</button>
-        <button class="btn btn-sm">Cerrar sesión</button>
+        <button class="btn1 btn-sm">Reclamar certificado</button>
+        <a class="btnCerrar" href="../../vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
       </div>
-
       </div>
 
       <!-- Fondo oscuro cuando el menú está abierto -->
