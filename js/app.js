@@ -127,3 +127,5 @@ document.addEventListener("DOMContentLoaded", function () {
   btnRegistro.style.display = "block";
   btnIniciarSesion.style.display = "block";
 });
+
+
