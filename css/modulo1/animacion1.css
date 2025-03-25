@@ -1,7 +1,9 @@
 /* Estilos header */
-body {
-    padding-top: 80px;
-  }
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .menu{
     padding-top: 80px;
@@ -197,39 +199,45 @@ h5 {
 
 
 
-/* Estilos section1 */
+/* Estilos fondo, titulo y párrafo */
 
-h1{
-    gap: 1rem;
-    color: #6497A8;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 2rem
+.container-fluid {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Asegura que la imagen cubra toda la pantalla */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../../assets/fondo-bethoveen.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
-.title1{
-    gap: 1rem;
-    color: #6497A8;
-    font-family: 'Archivo Narrow', sans-serif;
+#menu {
+    position: relative;
+    z-index: 1000; /* Asegura que el menú esté por encima del fondo */
 }
 
-.ratio{
+.bienvenida {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+    z-index: 10;
     width: 80%;
 }
-.btn{
+
+.bienvenida h1 {
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 1rem;
-    background-color: #5a8796; 
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px; 
+    font-weight: bold;
 }
 
-.btn:hover{
-    background-color: #6497A8;
-    color: white;
+.bienvenida p {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
 }
-
-
 
 /*Estilos footer */
 
