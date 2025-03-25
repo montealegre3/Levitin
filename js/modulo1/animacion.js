@@ -50,7 +50,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3d1f0b7 (corrigiendo errores)
