@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnIniciarSesion = document.querySelector('#btnIniciar');
   const btnModulos = document.querySelector('#btnModulos');
   const userIcon = document.querySelector("#icon");
+  const progreso = document.querySelector("#progreso");
 
 
   // Verificamos si el usuario ha iniciado sesión
@@ -114,6 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       titulo.textContent = `Nombre: ${usuarios[i].userN}`;
       correoTitulo.textContent = `Correo: ${usuarios[i].userE}`;
+
+      progreso.textContent = `${usuarios[i].progress}%`
+      progreso.style.width = `${usuarios[i].progress}%`
 
 
       return

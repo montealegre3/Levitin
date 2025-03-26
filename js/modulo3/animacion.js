@@ -1,6 +1,7 @@
-import { validarSesion } from "../validarSesion.js";
+import { validarSesion , mostrarProgreso } from "../validarSesion.js";
 
 validarSesion()
+mostrarProgreso()
 
 
 //Código para la funcionalidad del menu dropwdom
