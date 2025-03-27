@@ -84,7 +84,7 @@ body {
 
 #icon {
     text-decoration: none;
-    display: flex; 
+    display: flex!important; 
     align-items: center;
     cursor: pointer;
 }
