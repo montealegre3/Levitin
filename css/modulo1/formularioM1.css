@@ -83,7 +83,7 @@ body {
 
 #icon {
     text-decoration: none;
-    display: flex; 
+    display: flex!important; 
     align-items: center;
     cursor: pointer;
 }
@@ -178,7 +178,7 @@ h5 {
 
 /* Estilos btn menu lateral */
 
-.btn{
+.btn2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #6a6a9b; 
@@ -189,11 +189,10 @@ h5 {
     padding: 10px 15px; 
 }
 
-.btn:hover{
+.btn2:hover{
     background-color: #8080BC;
     color: white;
 }
-
 /* Terminan los estilos del menu lateral */
 
 
