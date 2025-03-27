@@ -1,6 +1,7 @@
-import { validarSesion } from "../validarSesion.js";
+import { validarSesion , mostrarProgreso } from "../validarSesion.js";
 
 validarSesion()
+mostrarProgreso()
 
 /* document.addEventListener("DOMContentLoaded", () => {
     const sorprendido = document.querySelector(".beethoven.sorprendido");
