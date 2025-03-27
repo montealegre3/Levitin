@@ -3,6 +3,7 @@ import { validarSesion , mostrarProgreso } from "../validarSesion.js";
 validarSesion()
 mostrarProgreso()
 
+
 //Código para la funcionalidad del menu dropwdom
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -56,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let usuarios = JSON.parse( localStorage.getItem("usuarios") );
 
+  console.log(usuarios)
+
   const form = document.querySelector("#form");
 
   function capturarRespuestas() {
@@ -78,15 +81,18 @@ document.addEventListener("DOMContentLoaded", function () {
 function validarRespuestas(e){
   e.preventDefault()
 
+
   const respuestasUser = capturarRespuestas()
   const respuestasCorrectas = {
-    p1: "Sandía",
-    p2: "Fresa",
-    p3: "Pera",
-    p4: "Mango",
-    p5: "Naranja",
+    p1: "sandia",
+    p2: "fresa",
+    p3: "pera",
+    p4: "mango",
+    p5: "naranja",
   }
   let acumulado = 0
+
+  console.log(acumulado)
 
   const arrayRespuestasUser = Object.values(respuestasUser)
   const arrayRespuestasCorrectas = Object.values(respuestasCorrectas)
@@ -98,18 +104,30 @@ function validarRespuestas(e){
     
   }
 
-
-  if(acumulado >= 3){
-    console.log("ganaste el examen 😊")
-    usuario.progress += 25
-    console.log(usuario.progreso)
-    localStorage.setItem("usuario",JSON.stringify(usuarios))
-  }else{
-      console.log("Debes repetir el examen 😶")
+  for (let i = 0; i < usuarios.length; i++) {
+    if( usuarios[i].logged && acumulado >= 3){
+      console.log("ganaste el examen 😊")
+      usuarios[i].progress += 25
+      console.log("progreso de local",usuarios[i].progress)
+      localStorage.setItem("usuarios",JSON.stringify(usuarios))
+      progreso.textContent = `${usuarios[i].progress}%`
+      progreso.style.width = `${usuarios[i].progress}%`
+    }else{
+        console.log("Debes repetir el examen 😶")
+    }
+    
   }
+
+
+  
 
   console.log("Tu acumulado es: ", acumulado)
 
 }
  
 form.addEventListener("submit", validarRespuestas)
+
+/* 
+const progreso = document.querySelector("#progreso");
+
+progreso.textContent = `${usuarios.progreso}%` */
