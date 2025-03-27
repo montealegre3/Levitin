@@ -50,5 +50,66 @@ document.addEventListener("DOMContentLoaded", function () {
         overlay.classList.remove("show");
     });
   });
-    
+ 
   
+  // Validar formulario
+
+  let usuarios = JSON.parse( localStorage.getItem("usuarios") );
+
+  const form = document.querySelector("#form");
+
+  function capturarRespuestas() {
+    const pregunta1 = document.querySelector('input[name="pregunta1"]:checked')?.value;
+    const pregunta2 = document.querySelector('input[name="pregunta2"]:checked')?.value;
+    const pregunta3 = document.querySelector('input[name="pregunta3"]:checked')?.value;
+    const pregunta4 = document.querySelector('input[name="pregunta4"]:checked')?.value;
+    const pregunta5 = document.querySelector('input[name="pregunta5"]:checked')?.value;
+
+    return {
+      p1: pregunta1,
+      p2: pregunta2,
+      p3: pregunta3,
+      p4: pregunta4,
+      p5: pregunta5,
+  }
+
+}
+
+function validarRespuestas(e){
+  e.preventDefault()
+
+  const respuestasUser = capturarRespuestas()
+  const respuestasCorrectas = {
+    p1: "Sandía",
+    p2: "Fresa",
+    p3: "Pera",
+    p4: "Mango",
+    p5: "Naranja",
+  }
+  let acumulado = 0
+
+  const arrayRespuestasUser = Object.values(respuestasUser)
+  const arrayRespuestasCorrectas = Object.values(respuestasCorrectas)
+
+  for (let i = 0; i < arrayRespuestasUser.length; i++) {
+    if(arrayRespuestasUser[i]  == arrayRespuestasCorrectas[i]){
+        acumulado++
+    }
+    
+  }
+
+
+  if(acumulado >= 3){
+    console.log("ganaste el examen 😊")
+    usuario.progress += 25
+    console.log(usuario.progreso)
+    localStorage.setItem("usuario",JSON.stringify(usuarios))
+  }else{
+      console.log("Debes repetir el examen 😶")
+  }
+
+  console.log("Tu acumulado es: ", acumulado)
+
+}
+ 
+form.addEventListener("submit", validarRespuestas)
