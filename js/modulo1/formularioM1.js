@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(usuarios)
 
   const form = document.querySelector("#form");
+  let progreso = document.querySelector("#progreso");
 
   function capturarRespuestas() {
     const pregunta1 = document.querySelector('input[name="pregunta1"]:checked')?.value;
@@ -106,28 +107,24 @@ function validarRespuestas(e){
 
   for (let i = 0; i < usuarios.length; i++) {
     if( usuarios[i].logged && acumulado >= 3){
-      console.log("ganaste el examen 😊")
-      usuarios[i].progress += 25
-      console.log("progreso de local",usuarios[i].progress)
-      localStorage.setItem("usuarios",JSON.stringify(usuarios))
-      progreso.textContent = `${usuarios[i].progress}%`
-      progreso.style.width = `${usuarios[i].progress}%`
+      console.log("ganaste el examen 😊");
+
+      if(!usuarios[i].avance){
+        usuarios[i].progress += 25;
+        usuarios[i].avance = true;
+        console.log("progreso de local",usuarios[i].progress);
+        localStorage.setItem("usuarios",JSON.stringify(usuarios));
+        progreso.textContent = `${usuarios[i].progress}%`;
+        progreso.style.width = `${usuarios[i].progress}%`;
+      } else {
+        console.log("Ya has sumado el 25% anteriormente.");
+      }
     }else{
         console.log("Debes repetir el examen 😶")
     }
-    
   }
-
-
-  
-
   console.log("Tu acumulado es: ", acumulado)
 
 }
  
 form.addEventListener("submit", validarRespuestas)
-
-/* 
-const progreso = document.querySelector("#progreso");
-
-progreso.textContent = `${usuarios.progreso}%` */

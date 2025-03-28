@@ -9,7 +9,7 @@ function header() {
 
     if (window.location.pathname.endsWith("index.html")) {
         console.log("Estás en index")
-        div.innerHTML = `  <div class="container">
+        div.innerHTML = `  
         <div class="row" id="menu">
           <div class="col-lg-12 menu">
               <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
