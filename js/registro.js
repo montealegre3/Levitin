@@ -12,6 +12,8 @@ function registrarUsuario(e) {
         userP: password.value.trim(),
         logged: false,
         progress: 0,
+        avance: false,
+        certificado: false,
     };
 
     // Obtener lista de usuarios guardados en localStorage
