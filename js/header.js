@@ -150,7 +150,7 @@ function header() {
             <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
                 <div class="container">
                   <a class="navbar-brand" href="../../index.html">
-                    <img src="../../assets/logo-morado.png" alt="LogoLevitin">
+                    <img src="../../assets/logo-azul.png" alt="LogoLevitin">
                   </a>
   
                   <div class="user-menu-container">
@@ -222,6 +222,61 @@ function header() {
               </nav>
         </div>
       </div>
+      <!-- Menú lateral -->
+        <div id="user-menu" class="user-menu p-3">
+          <ul class="list-unstyled">
+              <li class="mb-3">
+                  <h6>Mi perfil</h6>
+                  <p id="titulo">Nombre: usuario</p>
+                  <p id="correoTitulo">Correo: </p>
+              </li>
+              <li class="mb-3">
+                  <h6>Tu progreso:</h6>
+                  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div id="progreso" class="progress-bar">25%</div>
+                  </div>
+              </li>
+              <li class="mb-3">
+                  <h6>Módulos aprobados</h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo1/animacion1.html"><p>Módulo 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo2/animacion2.html"><p>Módulo 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo3/animacion3.html"><p>Módulo 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo4/animacion4.html"><p>Módulo 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+              </li>
+              <li class="mb-3">
+                  <h6>Formularios aprobados</h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo1/formularioM1.html"><p>Formulario 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo2/formularioM2.html"><p>Formulario 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo3/formularioM3.html"><p>Formulario 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo4/formularioM4.html"><p>Formulario 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  </div>
+              </li>
+          </ul>
+  
+        <!-- Botones finales -->
+        <div class="d-flex flex-column align-items-center gap-2">
+          <button class="btn1 btn-sm">Reclamar certificado</button>
+          <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
+        </div>
+      </div>
+  
+        <!-- Fondo oscuro cuando el menú está abierto -->
+        <div id="overlay"></div>
       `
     }
 

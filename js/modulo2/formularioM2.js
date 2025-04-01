@@ -59,6 +59,7 @@ let usuarios = JSON.parse( localStorage.getItem("usuarios") );
 console.log(usuarios)
 
 const form = document.querySelector("#form");
+let progreso = document.querySelector("#progreso");
 
 function capturarRespuestas() {
   const pregunta1 = document.querySelector('input[name="pregunta1"]:checked')?.value;
@@ -109,7 +110,7 @@ for (let i = 0; i < usuarios.length; i++) {
 
     if(!usuarios[i].avance){
       usuarios[i].progress += 25;
-      usuarios[i].avance = true;
+      usuarios[i].avance2 = true;
       console.log("progreso de local",usuarios[i].progress);
       localStorage.setItem("usuarios",JSON.stringify(usuarios));
       progreso.textContent = `${usuarios[i].progress}%`;
@@ -126,4 +127,3 @@ console.log("Tu acumulado es: ", acumulado)
 }
 
 form.addEventListener("submit", validarRespuestas)
-
