@@ -3,6 +3,16 @@ body {
     padding-top: 80px;
   }
 
+
+  .logo{
+    width: 219px;
+    height: 106px;
+    background-image: url(../../assets/logo-morado.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
 .menu{
     padding-top: 80px;
 }
