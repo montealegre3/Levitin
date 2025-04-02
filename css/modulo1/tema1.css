@@ -1,8 +1,25 @@
 /* Estilos header */
 
-body {
+body { 
     padding-top: 80px;
   }
+
+  h6 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
+    color: #6497A8;
+    display: block;
+    font-size: 20px;
+}
+
+.logo{
+    width: 219px;
+    height: 106px;
+    background-image: url(../../assets/logo-azul.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
 
 .menu{
     padding-top: 80px;
@@ -227,8 +244,6 @@ h5 {
     font-size: 1.2rem;
     background-color: #5a8796; 
     color: white;
-    margin-top: 100px;
-    margin-bottom: -50px;
     padding: 10px 20px;
     font-size: 1rem; 
     border-radius: 4px;
