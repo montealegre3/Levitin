@@ -1,19 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Archivo Narrow', sans-serif;
+/* Estilos header */
+body {
+    padding-top: 80px;
+  }
+
+
+  .logo{
+    width: 219px;
+    height: 106px;
+    background-image: url(../../assets/logo-morado.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
-body{
-    height: 100vh;
-    background-color: #000;
-    background-image: url(../../assets/fondo-michael.webp);
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
-
-/* Estilo header */
 .menu{
     padding-top: 80px;
 }

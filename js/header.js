@@ -7,7 +7,7 @@ function header() {
     const div = document.createElement("div")
     div.classList.add("container")
 
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname === "/") {
         console.log("Estás en index")
         div.innerHTML = `  
         <div class="row" id="menu">
@@ -15,7 +15,7 @@ function header() {
               <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
                   <div class="container">
                     <a class="navbar-brand" href="./index.html">
-                      <img src="../assets/logo-azul.png" alt="LogoLevitin">
+                      <div class="logo"></div>
                     </a>
     
                     <div class="user-menu-container">
@@ -150,7 +150,7 @@ function header() {
             <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
                 <div class="container">
                   <a class="navbar-brand" href="../../index.html">
-                    <img src="../../assets/logo-azul.png" alt="LogoLevitin">
+                    <div class="logo"></div>
                   </a>
   
                   <div class="user-menu-container">
@@ -239,31 +239,31 @@ function header() {
               <li class="mb-3">
                   <h6>Módulos aprobados</h6>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo1/animacion1.html"><p>Módulo 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo1/animacion1.html"><p>Módulo 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo2/animacion2.html"><p>Módulo 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo2/animacion2.html"><p>Módulo 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo3/animacion3.html"><p>Módulo 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo3/animacion3.html"><p>Módulo 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo4/animacion4.html"><p>Módulo 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo4/animacion4.html"><p>Módulo 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
               </li>
               <li class="mb-3">
                   <h6>Formularios aprobados</h6>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo1/formularioM1.html"><p>Formulario 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo1/formularioM1.html"><p>Formulario 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo2/formularioM2.html"><p>Formulario 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo2/formularioM2.html"><p>Formulario 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo3/formularioM3.html"><p>Formulario 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo3/formularioM3.html"><p>Formulario 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
                   <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo4/formularioM4.html"><p>Formulario 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                      <a href="../modulo4/formularioM4.html"><p>Formulario 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
                   </div>
               </li>
           </ul>
@@ -271,7 +271,7 @@ function header() {
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
           <button class="btn1 btn-sm">Reclamar certificado</button>
-          <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
+          <a class="btnCerrar" href="../cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
         </div>
       </div>
   
