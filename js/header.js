@@ -15,7 +15,7 @@ function header() {
               <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
                   <div class="container">
                     <a class="navbar-brand" href="./index.html">
-                      <img src="./assets/logo-azul.png" alt="LogoLevitin">
+                      <img src="../assets/logo-azul.png" alt="LogoLevitin">
                     </a>
     
                     <div class="user-menu-container">
