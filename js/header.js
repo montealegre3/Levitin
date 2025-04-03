@@ -7,7 +7,7 @@ function header() {
     const div = document.createElement("div")
     div.classList.add("container")
 
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname === "/" || window.location.pathname.endsWith("/Levitin/") ) {
         console.log("Estás en index")
         div.innerHTML = `  
         <div class="row" id="menu">

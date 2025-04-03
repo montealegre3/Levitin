@@ -13,6 +13,9 @@ function registrarUsuario(e) {
         logged: false,
         progress: 0,
         avance: false,
+        avance2: false,
+        avance3: false,
+        avance4: false,
         certificado: false,
     };
 
