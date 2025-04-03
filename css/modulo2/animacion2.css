@@ -1,13 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+body{
+    height: 125vh;
+    background-color: #000;
+    background-image: url(../../assets/fondo-michael.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
 /* Estilos header */
-body {
-    padding-top: 80px;
-  }
-
-
-  .logo{
-    width: 219px;
-    height: 106px;
-    background-image: url(../../assets/logo-morado.png);
+.logo{
+    width: 150px;
+    height: 100px;
+    background-image: url(../../assets/logo-blanco.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -18,17 +30,17 @@ body {
 }
 
 .navbar{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .nav-link{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
-    color: #8080BC;
+    color: #ffffff;
 }
 
 .nav-link:hover{
-    color: #8080BC;
+    color: #b6b6b6;
 }
 
 .dropdown-item{
@@ -108,7 +120,7 @@ body {
 h3 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
-    color:   #8080BC;
+    color:   #ffffff;
     display: block;
     margin: 0;
     font-size: 23px; 
@@ -254,7 +266,6 @@ section#introduccion {
 /* Estilos footer */
 .footer{
     background-color: #8080BC;
-    margin-top: 150px;
 }
 
 h5{
