@@ -1,10 +1,10 @@
-/* Estilos header */
-
 body { 
     padding-top: 80px;
-  }
+}
 
-  h6 {
+/* Estilos header */
+
+h6 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
     color: #6497A8;
@@ -72,7 +72,7 @@ body {
     .dropdown-menu .submenu-left {
         left: 0%;
     }
-} */
+}*/
 
 .dropdown-submenu {
     position: relative;
@@ -103,9 +103,8 @@ h5{
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-/* Menu lateral */ 
 
-/* Asegurar que el usuario-icon esté visible siempre */
+/* Estilos del icono y titulo del dashboard */ 
 .user-menu-container {
     top: 50px;
     z-index: 1050; 
@@ -134,6 +133,7 @@ h3 {
     margin: 0;
     font-size: 23px; 
 }
+
 /* Estilos del menú lateral */
 .user-menu {
     position: fixed;
@@ -160,7 +160,7 @@ h3 {
     border-bottom: 1px solid #ddd;
 }
 
-h5 {
+h6 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
     color: #6497A8;
@@ -196,7 +196,6 @@ h5 {
     z-index: 1500;
 }
 
-/* Mostrar el menú cuando esté activo */
 .user-menu.show {
     right: 0;
 }
@@ -205,10 +204,9 @@ h5 {
     display: block;
 }
 
-
 /* Estilos btn menu lateral */
 
-.btn2{
+.btn1{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #6a6a9b; 
@@ -219,13 +217,10 @@ h5 {
     padding: 10px 15px; 
 }
 
-.btn2:hover{
+.btn1:hover{
     background-color: #8080BC;
     color: white;
 }
-/* Terminan los estilos del menu lateral */
-
-
 
 
 /* Estilos section1 */
@@ -239,7 +234,7 @@ h5 {
 
 
 /* Estilos btn1 */
-.btn1{
+.btn2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #5a8796; 
@@ -250,7 +245,7 @@ h5 {
     border: none; 
 }
 
-.btn1:hover{
+.btn2:hover{
     background-color: #6497A8;
     color: white;
 }

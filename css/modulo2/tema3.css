@@ -1,7 +1,17 @@
-/* Estilos header */
 body {
     padding-top: 80px;
-  }
+}
+
+/* Estilos header */ 
+
+.logo{
+    width: 219px;
+    height: 106px;
+    background-image: url(../../assets/logo-morado.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
 
 .menu{
     padding-top: 80px;
@@ -58,25 +68,23 @@ body {
 
 .dropdown-submenu {
     position: relative;
-  }
+}
   
-  .dropdown-submenu .dropdown-menu {
+.dropdown-submenu .dropdown-menu {
     top: 0;
     margin-top: 0;
     display: none;
     left: auto !important;
     right: 100% !important;
     transform: translateX(-1px);
-  }
+}
   
-  .dropdown-submenu .dropdown-menu.show {
+.dropdown-submenu .dropdown-menu.show {
     display: block;
-  }
+}
 
+/* Estilos del icono y titulo del dashboard */
 
-/* Menu lateral */ 
-
-/* Asegurar que el usuario-icon esté visible siempre */
 .user-menu-container {
     top: 50px;
     z-index: 1050; 
@@ -107,10 +115,11 @@ h3 {
 }
 
 /* Estilos del menú lateral */
+
 .user-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Oculto fuera de la pantalla */
+    right: -250px;
     width: 250px;
     height: 100%;
     background: white;
@@ -164,7 +173,7 @@ h6 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: none; /* Oculto por defecto */
+    display: none;
     z-index: 1500;
 }
 
@@ -179,7 +188,7 @@ h6 {
 
 /* Estilos btn menu lateral */
 
-.btn2{
+.btn1{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #6a6a9b; 
@@ -190,14 +199,10 @@ h6 {
     padding: 10px 15px; 
 }
 
-.btn2:hover{
+.btn1:hover{
     background-color: #8080BC;
     color: white;
 }
-
-/* Terminan los estilos del menu lateral */
-
-
 
 /* Estilos titulos */
 .title1{
@@ -212,12 +217,6 @@ h1{
     font-size: 2rem
 }
 
-h3{
-    gap: 1rem;
-    color: #8080BC;
-    font-family: 'Archivo Narrow', sans-serif;
-}
-
 /* Estilos carrusel */
 .carousel{
     width: 80%;
@@ -229,7 +228,6 @@ h3{
     align-items: center;
     flex-direction: column;
 }
-
 
 /* Estilos formulario */
 .card-text {
@@ -251,7 +249,7 @@ h3{
     color: #333;
 }
 
-.btn1{
+.btn2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #6a6a9b; 
@@ -264,7 +262,7 @@ h3{
     border: none; 
 }
 
-.btn1:hover{
+.btn2:hover{
     background-color: #8080BC;
     color: white;
 }
