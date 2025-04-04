@@ -50,13 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 // Validar formulario
 
-let usuarios = JSON.parse( localStorage.getItem("usuarios") );
-
-console.log(usuarios)
+let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 const form = document.querySelector("#form");
+const progreso = document.querySelector("#progreso");
+const resultadoMensaje = document.querySelector("#resultado"); 
+
 
 function capturarRespuestas() {
   const pregunta1 = document.querySelector('input[name="pregunta1"]:checked')?.value;
@@ -71,56 +73,56 @@ function capturarRespuestas() {
     p3: pregunta3,
     p4: pregunta4,
     p5: pregunta5,
-}
+  };
 
 }
 
-function validarRespuestas(e){
-e.preventDefault()
+// Función para validar respuestas
+function validarRespuestas(e) {
+  e.preventDefault();
+
+  
+  const respuestasCorrectas = {
+    p1: "sandia",
+    p2: "fresa",
+    p3: "pera",
+    p4: "mango",
+    p5: "naranja",
+  };
 
 
-const respuestasUser = capturarRespuestas()
-const respuestasCorrectas = {
-  p1: "sandia",
-  p2: "fresa",
-  p3: "pera",
-  p4: "mango",
-  p5: "naranja",
-}
-let acumulado = 0
+  const respuestasUser = capturarRespuestas();
+  let acumulado = Object.keys(respuestasCorrectas).reduce((count, key) => {
+    return count + (respuestasUser[key] === respuestasCorrectas[key] ? 1 : 0);
+  }, 0);
 
-console.log(acumulado)
+  
+  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5.`;
 
-const arrayRespuestasUser = Object.values(respuestasUser)
-const arrayRespuestasCorrectas = Object.values(respuestasCorrectas)
+  let usuarioActual = usuarios.find(user => user.logged);
+  
+  if (usuarioActual) {
+    if (acumulado >= 3) {
+      resultadoMensaje.textContent += " ¡Ganaste el examen! 😊";
 
-for (let i = 0; i < arrayRespuestasUser.length; i++) {
-  if(arrayRespuestasUser[i]  == arrayRespuestasCorrectas[i]){
-      acumulado++
+      if (!usuarioActual.avance3) {
+        usuarioActual.progress += 25;
+        usuarioActual.avance3 = true;
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        
+        
+        progreso.textContent = `${usuarioActual.progress}%`;
+        progreso.style.width = `${usuarioActual.progress}%`;
+      } else {
+        resultadoMensaje.textContent += " (Ya habías sumado el 25% anteriormente)";
+      }
+    } else {
+      resultadoMensaje.textContent += " Debes repetir el examen 😶";
+    }
   }
-  
-}
 
-for (let i = 0; i < usuarios.length; i++) {
-  if( usuarios[i].logged && acumulado >= 3){
-    console.log("ganaste el examen 😊")
-    usuarios[i].progress += 25
-    console.log("progreso de local",usuarios[i].progress)
-    localStorage.setItem("usuarios",JSON.stringify(usuarios))
-    progreso.textContent = `${usuarios[i].progress}%`
-    progreso.style.width = `${usuarios[i].progress}%`
-  }else{
-      console.log("Debes repetir el examen 😶")
-  }
-  
+  console.log("Tu acumulado es:", acumulado);
 }
 
 
-
-
-console.log("Tu acumulado es: ", acumulado)
-
-}
-
-form.addEventListener("submit", validarRespuestas)
-  
+form.addEventListener("submit", validarRespuestas);
