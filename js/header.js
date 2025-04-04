@@ -14,7 +14,7 @@ function header() {
           <div class="col-lg-12 menu">
               <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
                   <div class="container">
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="../../">
                       <div class="logo"></div>
                     </a>
     
@@ -153,7 +153,7 @@ function header() {
         <div class="col-lg-12 menu">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
                 <div class="container">
-                  <a class="navbar-brand" href="/">
+                  <a class="navbar-brand" href="../../">
                     <div class="logo"></div>
                   </a>
   
