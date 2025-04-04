@@ -44,3 +44,29 @@ export function mostrarProgreso() {
   }
 
 }
+
+export function estadoFormularios() {
+  const usuarioActual = usuarios.find(u => u.logged);
+  if (!usuarioActual) return;
+
+  const formulariosAprobados = usuarioActual.formulariosAprobados || [];
+
+  formulariosAprobados.forEach(formId => {
+    const contenedor = document.getElementById(formId);
+    if (contenedor) {
+      const icono = contenedor.querySelector(".estado-formulario");
+      if (icono) {
+        icono.classList.add("bi", "bi-check-circle-fill", "text-success");
+      }
+    }
+  });
+
+  // Para los que NO están aprobados
+  document.querySelectorAll(".estado-formulario").forEach(icono => {
+    const contenedor = icono.closest("div");
+    if (contenedor && !formulariosAprobados.includes(contenedor.id)) {
+      icono.classList.add("bi", "bi-lock-fill", "text-secondary");
+    }
+  });
+}
+

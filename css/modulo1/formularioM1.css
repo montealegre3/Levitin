@@ -1,7 +1,17 @@
-/* Estilos header */
 body {
     padding-top: 80px;
   }
+
+/* Estilos Header */
+
+.logo{
+    width: 219px;
+    height: 106px;
+    background-image: url(../../assets/logo-azul.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
 
   .menu{
     padding-top: 80px;
@@ -73,9 +83,7 @@ body {
     display: block;
   }
   
-/* Menu lateral */ 
-
-/* Asegurar que el usuario-icon esté visible siempre */
+/* Estilos del icono y titulo del dashboard */ 
 .user-menu-container {
     top: 50px;
     z-index: 1050; 
@@ -131,7 +139,7 @@ h3 {
     border-bottom: 1px solid #ddd;
 }
 
-h5 {
+h6 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
     color: #6497A8;
@@ -178,7 +186,7 @@ h5 {
 
 /* Estilos btn menu lateral */
 
-.btn2{
+.btn1{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #6a6a9b; 
@@ -189,7 +197,7 @@ h5 {
     padding: 10px 15px; 
 }
 
-.btn2:hover{
+.btn1:hover{
     background-color: #8080BC;
     color: white;
 }
@@ -223,7 +231,7 @@ h5{
 
 /* Estilos de botón */
 
-.btn1{
+.btn2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #5a8796; 
@@ -236,7 +244,7 @@ h5{
     border: none; 
 }
 
-.btn1:hover{
+.btn2:hover{
     background-color: #6497A8;
     color: white;
 }

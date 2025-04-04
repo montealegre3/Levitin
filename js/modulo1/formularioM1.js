@@ -1,7 +1,8 @@
-import { validarSesion , mostrarProgreso } from "../validarSesion.js";
+import { validarSesion , mostrarProgreso , estadoFormularios } from "../validarSesion.js";
 
 validarSesion()
 mostrarProgreso()
+estadoFormularios()
 
 
 //Código para la funcionalidad del menu dropwdom
@@ -53,78 +54,78 @@ document.addEventListener("DOMContentLoaded", function () {
   });
  
   
-  // Validar formulario
+// Validar formulario
 
-  let usuarios = JSON.parse( localStorage.getItem("usuarios") );
+let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-  console.log(usuarios)
+const form = document.querySelector("#form");
+const progreso = document.querySelector("#progreso");
+const resultadoMensaje = document.querySelector("#resultado"); 
 
-  const form = document.querySelector("#form");
-  let progreso = document.querySelector("#progreso");
 
-  function capturarRespuestas() {
-    const pregunta1 = document.querySelector('input[name="pregunta1"]:checked')?.value;
-    const pregunta2 = document.querySelector('input[name="pregunta2"]:checked')?.value;
-    const pregunta3 = document.querySelector('input[name="pregunta3"]:checked')?.value;
-    const pregunta4 = document.querySelector('input[name="pregunta4"]:checked')?.value;
-    const pregunta5 = document.querySelector('input[name="pregunta5"]:checked')?.value;
+function capturarRespuestas() {
+  const pregunta1 = document.querySelector('input[name="pregunta1"]:checked')?.value;
+  const pregunta2 = document.querySelector('input[name="pregunta2"]:checked')?.value;
+  const pregunta3 = document.querySelector('input[name="pregunta3"]:checked')?.value;
+  const pregunta4 = document.querySelector('input[name="pregunta4"]:checked')?.value;
+  const pregunta5 = document.querySelector('input[name="pregunta5"]:checked')?.value;
 
-    return {
-      p1: pregunta1,
-      p2: pregunta2,
-      p3: pregunta3,
-      p4: pregunta4,
-      p5: pregunta5,
-  }
+  return {
+    p1: pregunta1,
+    p2: pregunta2,
+    p3: pregunta3,
+    p4: pregunta4,
+    p5: pregunta5,
+  };
 
 }
 
-function validarRespuestas(e){
-  e.preventDefault()
+// Función para validar respuestas
+function validarRespuestas(e) {
+  e.preventDefault();
 
-
-  const respuestasUser = capturarRespuestas()
+  
   const respuestasCorrectas = {
     p1: "sandia",
     p2: "fresa",
     p3: "pera",
     p4: "mango",
     p5: "naranja",
-  }
-  let acumulado = 0
+  };
 
-  console.log(acumulado)
 
-  const arrayRespuestasUser = Object.values(respuestasUser)
-  const arrayRespuestasCorrectas = Object.values(respuestasCorrectas)
+  const respuestasUser = capturarRespuestas();
+  let acumulado = Object.keys(respuestasCorrectas).reduce((count, key) => {
+    return count + (respuestasUser[key] === respuestasCorrectas[key] ? 1 : 0);
+  }, 0);
 
-  for (let i = 0; i < arrayRespuestasUser.length; i++) {
-    if(arrayRespuestasUser[i]  == arrayRespuestasCorrectas[i]){
-        acumulado++
-    }
-    
-  }
+  
+  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5.`;
 
-  for (let i = 0; i < usuarios.length; i++) {
-    if( usuarios[i].logged && acumulado >= 3){
-      console.log("ganaste el examen 😊");
+  let usuarioActual = usuarios.find(user => user.logged);
+  
+  if (usuarioActual) {
+    if (acumulado >= 3) {
+      resultadoMensaje.textContent += " ¡Ganaste el examen! 😊";
 
-      if(!usuarios[i].avance){
-        usuarios[i].progress += 25;
-        usuarios[i].avance = true;
-        console.log("progreso de local",usuarios[i].progress);
-        localStorage.setItem("usuarios",JSON.stringify(usuarios));
-        progreso.textContent = `${usuarios[i].progress}%`;
-        progreso.style.width = `${usuarios[i].progress}%`;
+      if (!usuarioActual.avance) {
+        usuarioActual.progress += 25;
+        usuarioActual.avance = true;
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        
+        
+        progreso.textContent = `${usuarioActual.progress}%`;
+        progreso.style.width = `${usuarioActual.progress}%`;
       } else {
-        console.log("Ya has sumado el 25% anteriormente.");
+        resultadoMensaje.textContent += " (Ya habías sumado el 25% anteriormente)";
       }
-    }else{
-        console.log("Debes repetir el examen 😶")
+    } else {
+      resultadoMensaje.textContent += " Debes repetir el examen 😶";
     }
   }
-  console.log("Tu acumulado es: ", acumulado)
 
+  console.log("Tu acumulado es:", acumulado);
 }
- 
-form.addEventListener("submit", validarRespuestas)
+
+
+form.addEventListener("submit", validarRespuestas);
