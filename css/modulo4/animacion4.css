@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Archivo Narrow', sans-serif;
 }
 
 body{
@@ -221,6 +220,7 @@ h6 {
 /* Estilos section "introducción" */
 
 section#introduccion {
+    font-family: 'Archivo Narrow', sans-serif;
     height: calc(100vh - 60px); 
     display: flex;
     flex-direction: column;
@@ -284,12 +284,6 @@ section#introduccion {
 
 .ratio{
     width: 80%;
-}
-
-h1{
-    gap: 1rem;
-    color: #DB9E3A;
-    font-family: 'Archivo Narrow', sans-serif;
 }
 
 .title1{
