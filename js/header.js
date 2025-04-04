@@ -118,17 +118,21 @@ function header() {
               </li>
               <li class="mb-3">
                   <h6>Formularios aprobados</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo1/formularioM1.html"><p>Formulario 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario1" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo1/formularioM1.html"><p>Formulario 1</p></a>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo2/formularioM2.html"><p>Formulario 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario2" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo2/formularioM2.html"><p>Formulario 2</p></a>
+                      <i class="estado-formulario text-success fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo3/formularioM3.html"><p>Formulario 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario3" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo3/formularioM3.html"><p>Formulario 3</p></a>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo4/formularioM4.html"><p>Formulario 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario4" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo4/formularioM4.html"><p>Formulario 4</p></a>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
               </li>
           </ul>
@@ -253,17 +257,21 @@ function header() {
               </li>
               <li class="mb-3">
                   <h6>Formularios aprobados</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo1/formularioM1.html"><p>Formulario 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario1" class="d-flex justify-content-between align-items-center">
+                      <a href="../modulo1/formularioM1.html"><p>Formulario 1</p></a>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo2/formularioM2.html"><p>Formulario 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario2" class="d-flex justify-content-between align-items-center">
+                      <a href="../modulo2/formularioM2.html"><p>Formulario 2</p></a>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo3/formularioM3.html"><p>Formulario 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario3" class="d-flex justify-content-between align-items-center">
+                      <a href="../modulo3/formularioM3.html"><p>Formulario 3</p></a>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo4/formularioM4.html"><p>Formulario 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="formulario4" class="d-flex justify-content-between align-items-center">
+                      <a href="../modulo4/formularioM4.html"><p>Formulario 4</p></a>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
               </li>
           </ul>
