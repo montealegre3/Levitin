@@ -100,28 +100,31 @@ function validarRespuestas(e) {
   }, 0);
 
   
-  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5.`;
+  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5. Tienes que repetir el examen`;
 
   let usuarioActual = usuarios.find(user => user.logged);
   
   if (usuarioActual) {
     if (acumulado >= 3) {
       resultadoMensaje.textContent += " ¡Ganaste el examen! 😊";
-
+    
       if (!usuarioActual.avance) {
         usuarioActual.progress += 25;
         usuarioActual.avance = true;
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        
-        
-        progreso.textContent = `${usuarioActual.progress}%`;
-        progreso.style.width = `${usuarioActual.progress}%`;
       } else {
         resultadoMensaje.textContent += " (Ya habías sumado el 25% anteriormente)";
       }
-    } else {
-      resultadoMensaje.textContent += " Debes repetir el examen 😶";
+    
+      const idFormularioActual = "formulario1";
+      if (!usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
+        usuarioActual.formulariosAprobados.push(idFormularioActual);
+      }
+    
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      progreso.textContent = `${usuarioActual.progress}%`;
+      progreso.style.width = `${usuarioActual.progress}%`;
     }
+    
   }
 
   console.log("Tu acumulado es:", acumulado);

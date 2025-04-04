@@ -46,6 +46,8 @@ export function mostrarProgreso() {
 }
 
 export function estadoFormularios() {
+  
+  console.log("ejecutando..")
   const usuarioActual = usuarios.find(u => u.logged);
   if (!usuarioActual) return;
 

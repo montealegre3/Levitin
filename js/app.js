@@ -18,10 +18,6 @@ es opcional
 
 */
 
-
-
-
-
 //Código para la funcionalidad del menu dropwdom
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".dropdown-submenu .dropdown-toggle").forEach(function (element) {

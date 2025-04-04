@@ -17,6 +17,7 @@ function registrarUsuario(e) {
         avance3: false,
         avance4: false,
         certificado: false,
+        formulariosAprobados: []
     };
 
     // Obtener lista de usuarios guardados en localStorage
