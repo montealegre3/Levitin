@@ -29,9 +29,12 @@ export function validarSesion() {
 
   // Si no hay sesión iniciada
   btnModulos.style.display = "none";
-  userIcon.style.display = "none";
+  userIcon.classList.add("d-none") ;
   btnRegistro.style.display = "block";
   btnIniciarSesion.style.display = "block";
+
+  return userIcon
+
 }
 
 export function mostrarProgreso() {
@@ -46,6 +49,8 @@ export function mostrarProgreso() {
 }
 
 export function estadoFormularios() {
+
+  
   
   console.log("ejecutando..")
   const usuarioActual = usuarios.find(u => u.logged);
@@ -53,10 +58,14 @@ export function estadoFormularios() {
 
   const formulariosAprobados = usuarioActual.formulariosAprobados || [];
 
+  console.log(formulariosAprobados)
+
   formulariosAprobados.forEach(formId => {
+    
     const contenedor = document.getElementById(formId);
     if (contenedor) {
       const icono = contenedor.querySelector(".estado-formulario");
+      
       if (icono) {
         icono.classList.add("bi", "bi-check-circle-fill", "text-success");
       }
@@ -66,6 +75,7 @@ export function estadoFormularios() {
   // Para los que NO están aprobados
   document.querySelectorAll(".estado-formulario").forEach(icono => {
     const contenedor = icono.closest("div");
+    console.log(contenedor)
     if (contenedor && !formulariosAprobados.includes(contenedor.id)) {
       icono.classList.add("bi", "bi-lock-fill", "text-secondary");
     }

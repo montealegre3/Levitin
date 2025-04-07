@@ -10,7 +10,7 @@ function cerrarSesion (){
 
             usuarios[i].logged = false
             localStorage.setItem("usuarios", JSON.stringify(usuarios))
-            window.location = "./index.html" 
+            window.location = "../" 
         }
 
     
@@ -22,4 +22,4 @@ function cerrarSesion (){
     
 cerrarSesion ()
 
-window.location = "../index.html"
+window.location = "../"

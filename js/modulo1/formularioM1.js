@@ -100,7 +100,7 @@ function validarRespuestas(e) {
   }, 0);
 
   
-  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5. Tienes que repetir el examen`;
+  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5.`;
 
   let usuarioActual = usuarios.find(user => user.logged);
   
@@ -121,8 +121,12 @@ function validarRespuestas(e) {
       }
     
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+
       progreso.textContent = `${usuarioActual.progress}%`;
       progreso.style.width = `${usuarioActual.progress}%`;
+
+      
     }
     
   }

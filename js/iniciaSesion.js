@@ -15,7 +15,7 @@ function iniciarSesion(e) {
         if (usuarios[i].userN === userName.value.trim() && usuarios[i].userP === password.value.trim()) {
             /* localStorage.setItem("usuarioActivo", JSON.stringify(usuarioEncontrado)); */
             alert(`Bienvenido, ${usuarios[i].userN}!`); 
-            window.location.href = "../index.html";
+            window.location.href = "../";
             usuarios[i].logged = true
             console.log(usuarios)
             localStorage.setItem("usuarios", JSON.stringify(usuarios))

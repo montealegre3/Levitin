@@ -128,7 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Usuario NO autenticado: Mostrar registro e inicio de sesión, ocultar módulos e icono de usuario
   btnModulos.style.display = "none";
-  userIcon.style.display = "none";
+  userIcon.classList.add("d-none") ;
+  userIcon.classList.remove("d-flex") ;
   btnRegistro.style.display = "block";
   btnIniciarSesion.style.display = "block";
 });

@@ -5,6 +5,8 @@ mostrarProgreso()
 estadoFormularios()
 
 
+
+
 //Código para la funcionalidad del menu dropwdom
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -50,5 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       userMenu.classList.remove("show");
       overlay.classList.remove("show");
   });
+  console.log(userIcon)
 });
+
 

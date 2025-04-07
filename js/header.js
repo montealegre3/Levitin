@@ -19,7 +19,7 @@ function header() {
                     </a>
     
                     <div class="user-menu-container">
-                      <a href="#" id="icon">
+                      <a href="#" id="icon" class="d-flex">
                           <img src="./assets/user-icon.webp" alt="Usuario" class="user-icon">
                           <h3>Mi perfil</h3>
                       </a>
@@ -140,7 +140,7 @@ function header() {
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
           <button class="btn1 btn-sm">Reclamar certificado</button>
-          <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
+          <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión 🍄</button></a>
         </div>
       </div>
   
@@ -158,7 +158,7 @@ function header() {
                   </a>
   
                   <div class="user-menu-container">
-                    <a href="#" id="icon">
+                    <a href="#" id="icon" class="d-flex">
                         <img src="../../assets/user-icon.webp" alt="Usuario" class="user-icon">
                         <h3>Mi perfil</h3>
                     </a>

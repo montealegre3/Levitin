@@ -103,6 +103,7 @@ function validarRespuestas(e) {
 
   let usuarioActual = usuarios.find(user => user.logged);
   
+  
   if (usuarioActual) {
     if (acumulado >= 3) {
       resultadoMensaje.textContent += " ¡Ganaste el examen! 😊";
