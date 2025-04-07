@@ -18,6 +18,11 @@ es opcional
 
 */
 
+import { estadoFormularios } from "./validarSesion.js";
+
+estadoFormularios()
+
+
 //Código para la funcionalidad del menu dropwdom
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".dropdown-submenu .dropdown-toggle").forEach(function (element) {
