@@ -103,17 +103,21 @@ function header() {
               </li>
               <li class="mb-3">
                   <h6>Módulos aprobados</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo1/animacion1.html"><p>Módulo 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo1" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo1/animacion1.html"><p>Módulo 1</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo2/animacion2.html"><p>Módulo 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo2" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo2/animacion2.html"><p>Módulo 2</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo3/animacion3.html"><p>Módulo 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo3" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo3/animacion3.html"><p>Módulo 3</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="./vistas/modulo4/animacion4.html"><p>Módulo 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo4" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo4/animacion4.html"><p>Módulo 4</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
               </li>
               <li class="mb-3">
@@ -242,17 +246,21 @@ function header() {
               </li>
               <li class="mb-3">
                   <h6>Módulos aprobados</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo1/animacion1.html"><p>Módulo 1</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo1" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo1/animacion1.html"><p>Módulo 1</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo2/animacion2.html"><p>Módulo 2</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo2" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo2/animacion2.html"><p>Módulo 2</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo3/animacion3.html"><p>Módulo 3</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo3" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo3/animacion3.html"><p>Módulo 3</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <a href="../modulo4/animacion4.html"><p>Módulo 4</p></a><i class="bi bi-check-circle-fill text-success fs-5"></i>
+                  <div id="modulo4" class="d-flex justify-content-between align-items-center">
+                      <a href="./vistas/modulo4/animacion4.html"><p>Módulo 4</p></a>
+                      <i class="estado-modulo fs-5"></i>
                   </div>
               </li>
               <li class="mb-3">

@@ -105,21 +105,26 @@ function validarRespuestas(e) {
   if (usuarioActual) {
     if (acumulado >= 3) {
       resultadoMensaje.textContent += " ¡Ganaste el examen! 😊";
-
+    
       if (!usuarioActual.avance4) {
         usuarioActual.progress += 25;
         usuarioActual.avance4 = true;
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        
-        
-        progreso.textContent = `${usuarioActual.progress}%`;
-        progreso.style.width = `${usuarioActual.progress}%`;
       } else {
         resultadoMensaje.textContent += " (Ya habías sumado el 25% anteriormente)";
       }
-    } else {
-      resultadoMensaje.textContent += " Debes repetir el examen 😶";
+    
+      const idFormularioActual = "formulario4";
+      if (!usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
+        usuarioActual.formulariosAprobados.push(idFormularioActual);
+      }
+    
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      progreso.textContent = `${usuarioActual.progress}%`;
+      progreso.style.width = `${usuarioActual.progress}%`;
+
+      
     }
+    
   }
 
   console.log("Tu acumulado es:", acumulado);

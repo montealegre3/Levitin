@@ -50,3 +50,29 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.classList.remove("show");
   });
 });
+
+// Desactiva el botón de "Responder formulario" si pasa o no pasa el formulario
+
+document.addEventListener("DOMContentLoaded", () => {
+  const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+  const usuarioActual = usuarios.find(u => u.logged);
+  const formularioId = "formulario1";
+
+  const enlaceFormulario = document.querySelector('#formulario a');
+  const botonFormulario = enlaceFormulario?.querySelector("button");
+
+  if (usuarioActual && usuarioActual.formulariosAprobados?.includes(formularioId)) {
+    // Desactiva el botón
+    botonFormulario.disabled = true;
+    botonFormulario.textContent = "Formulario ya respondido ✅";
+    botonFormulario.classList.add("btn-secondary");
+    botonFormulario.classList.remove("btn2");
+
+    // Desactiva el enlace
+    enlaceFormulario.removeAttribute("href");
+    enlaceFormulario.style.pointerEvents = "none";
+    enlaceFormulario.style.textDecoration = "none";
+    enlaceFormulario.style.cursor = "not-allowed";
+  }
+});
+

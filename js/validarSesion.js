@@ -49,36 +49,62 @@ export function mostrarProgreso() {
 }
 
 export function estadoFormularios() {
-
-  
-  
-  console.log("ejecutando..")
+  console.log("ejecutando...");
   const usuarioActual = usuarios.find(u => u.logged);
   if (!usuarioActual) return;
 
   const formulariosAprobados = usuarioActual.formulariosAprobados || [];
 
-  console.log(formulariosAprobados)
-
+  // Íconos de formularios aprobados
   formulariosAprobados.forEach(formId => {
-    
     const contenedor = document.getElementById(formId);
     if (contenedor) {
       const icono = contenedor.querySelector(".estado-formulario");
-      
+      const enlace = contenedor.querySelector("a");
+
       if (icono) {
         icono.classList.add("bi", "bi-check-circle-fill", "text-success");
+      }
+
+      // Desactivar link del formulario aprobado
+      if (enlace) {
+        enlace.removeAttribute("href");
+        enlace.classList.add("text-muted", "disabled");
+        enlace.style.pointerEvents = "none";
+        enlace.style.textDecoration = "none";
       }
     }
   });
 
-  // Para los que NO están aprobados
+  // Formularios NO aprobados: poner ícono de candado
   document.querySelectorAll(".estado-formulario").forEach(icono => {
     const contenedor = icono.closest("div");
-    console.log(contenedor)
     if (contenedor && !formulariosAprobados.includes(contenedor.id)) {
       icono.classList.add("bi", "bi-lock-fill", "text-secondary");
     }
   });
+
+  // Módulos
+  const modulos = [
+    { id: "modulo1", dependeDe: "formulario1" },
+    { id: "modulo2", dependeDe: "formulario2" },
+    { id: "modulo3", dependeDe: "formulario3" },
+    { id: "modulo4", dependeDe: "formulario4" },
+  ];
+
+  modulos.forEach(mod => {
+    const moduloDiv = document.getElementById(mod.id);
+    if (!moduloDiv) return;
+
+    const iconoModulo = moduloDiv.querySelector(".estado-modulo");
+    if (!iconoModulo) return;
+
+    if (formulariosAprobados.includes(mod.dependeDe)) {
+      iconoModulo.classList.add("bi", "bi-check-circle-fill", "text-success");
+    } else {
+      iconoModulo.classList.add("bi", "bi-lock-fill", "text-secondary");
+    }
+  });
 }
+
 

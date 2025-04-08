@@ -99,7 +99,7 @@ function validarRespuestas(e) {
   }, 0);
 
   
-  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5. Tienes que repetir el examen`;
+  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5.`;
 
   let usuarioActual = usuarios.find(user => user.logged);
   
