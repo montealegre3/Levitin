@@ -1,5 +1,8 @@
 body {
     padding-top: 80px;
+   
+  position: relative;
+    
 }
 
 /* Estilos del header */
@@ -92,7 +95,7 @@ body {
 
 #icon {
     text-decoration: none;
-    display: flex!important; 
+    /* display: flex!important; */ 
     align-items: center;
     cursor: pointer;
 }
@@ -225,6 +228,9 @@ h3{
 }
 
 /* Estilos madonna-expresiones */
+#expresionesMadonna .col-6 {
+    cursor: pointer;
+  }
 
 .img-hover {
     transition: transform 0.3s ease;
@@ -235,6 +241,36 @@ h3{
 .img-hover:hover {
     transform: scale(1.1);
 }
+
+#image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.replicated-image {
+    position: absolute;
+    animation: moveImage 6s linear infinite;
+    pointer-events: none;
+    opacity: 0.7;
+    width: 50px;  /* Ajusta el tamaño aquí */
+   
+  }
+  
+  @keyframes moveImage {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(var(--x), var(--y));
+    }
+  }
 
 /* Estilos formulario */
 
