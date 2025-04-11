@@ -1,8 +1,9 @@
-import { validarSesion , mostrarProgreso , estadoFormularios } from "../validarSesion.js";
+import { validarSesion , mostrarProgreso , estadoFormularios , condicionarBotonSiguiente } from "../validarSesion.js";
 
 validarSesion()
 mostrarProgreso()
 estadoFormularios()
+condicionarBotonSiguiente("../../vistas/modulo4/tema1.html");
 
 //Código para la funcionalidad del menu dropwdom
 

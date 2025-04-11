@@ -3,7 +3,7 @@ import { validarSesion , mostrarProgreso , estadoFormularios , condicionarBotonS
 validarSesion()
 mostrarProgreso()
 estadoFormularios()
-condicionarBotonSiguiente()
+condicionarBotonSiguiente("../../vistas/modulo2/tema1.html");
 
 //Código para la funcionalidad del menu dropwdom
 

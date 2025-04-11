@@ -126,7 +126,7 @@ export function condicionarBotonSiguiente(rutaDestino) {
       const usuarioLogueado = usuarios.find(u => u.logged);
 
       if (usuarioLogueado) {
-        window.location.href = "../../vistas/modulo1/tema1.html";
+        window.location.href = rutaDestino;
       } else {
         alert("Debes iniciar sesión para continuar.");
         window.location.href = "../../vistas/registro.html";
