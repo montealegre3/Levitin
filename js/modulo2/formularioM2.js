@@ -128,6 +128,8 @@ function validarRespuestas(e) {
   }
 
   console.log("Tu acumulado es:", acumulado);
+    usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    estadoFormularios(); 
 }
 
 

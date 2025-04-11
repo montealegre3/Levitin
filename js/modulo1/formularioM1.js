@@ -127,6 +127,7 @@ function validarRespuestas(e) {
       }
 
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      
 
       progreso.textContent = `${usuarioActual.progress}%`;
       progreso.style.width = `${usuarioActual.progress}%`;
@@ -139,6 +140,8 @@ function validarRespuestas(e) {
   }
 
   console.log("Tu acumulado es:", acumulado);
+  usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+  estadoFormularios(); 
 }
 
 form.addEventListener("submit", validarRespuestas);

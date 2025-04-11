@@ -49,7 +49,9 @@ export function mostrarProgreso() {
 }
 
 export function estadoFormularios() {
-  console.log("ejecutando...");
+  console.log("ejecutando estado formularios");
+  usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+  
   const usuarioActual = usuarios.find(u => u.logged);
   if (!usuarioActual) return;
 
@@ -63,11 +65,14 @@ export function estadoFormularios() {
       const enlace = contenedor.querySelector("a");
 
       if (icono) {
+        console.log("entra a condicional ícono")
         icono.classList.add("bi", "bi-check-circle-fill", "text-success");
+        icono.classList.remove("bi", "bi-lock-fill", "text-secondary");
       }
 
       // Desactivar link del formulario aprobado
       if (enlace) {
+        console.log("entra a condicional enlace y desactiva candado")
         enlace.removeAttribute("href");
         enlace.classList.add("text-muted", "disabled");
         enlace.style.pointerEvents = "none";
@@ -101,8 +106,10 @@ export function estadoFormularios() {
 
     if (formulariosAprobados.includes(mod.dependeDe)) {
       iconoModulo.classList.add("bi", "bi-check-circle-fill", "text-success");
+      iconoModulo.classList.remove("bi", "bi-lock-fill", "text-secondary");
     } else {
       iconoModulo.classList.add("bi", "bi-lock-fill", "text-secondary");
+      iconoModulo.classList.remove("bi", "bi-check-circle-fill", "text-success");
     }
   });
 }
