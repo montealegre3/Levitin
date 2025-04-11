@@ -75,3 +75,42 @@ document.addEventListener("DOMContentLoaded", () => {
     enlaceFormulario.style.cursor = "not-allowed";
   }
 });
+
+//Animación expresiones madonna
+
+const images = document.querySelectorAll('.img-hover');
+const overlay = document.createElement('div');
+overlay.id = 'image-overlay'; // Este contenedor cubrirá toda la pantalla
+document.body.appendChild(overlay);
+
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    // Limpiar el overlay de imágenes anteriores
+    overlay.innerHTML = '';
+
+    const src = image.getAttribute('src');
+    
+    // Crear 30 copias de la imagen para llenar la pantalla
+    for (let i = 0; i < 30; i++) {
+      const imgClone = document.createElement('img');
+      imgClone.src = src;
+      imgClone.classList.add('replicated-image');
+      
+      // Establecer posiciones aleatorias para cada imagen replicada
+      const xPos = Math.random() * 100 - 50; // Aleatorio entre -50vw y 50vw
+      const yPos = Math.random() * 100 - 50; // Aleatorio entre -50vh y 50vh
+      imgClone.style.setProperty('--x', `${xPos}vw`);
+      imgClone.style.setProperty('--y', `${yPos}vh`);
+      
+      overlay.appendChild(imgClone);
+    }
+
+    // Mostrar el overlay
+    overlay.style.display = 'flex';
+    
+    // Después de 6 segundos (duración de la animación), ocultar el overlay
+    setTimeout(() => {
+      overlay.style.display = 'none';
+    }, 6000); // Duración del movimiento
+  });
+});

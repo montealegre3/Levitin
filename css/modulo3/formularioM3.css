@@ -92,7 +92,7 @@ body {
 
 #icon {
     text-decoration: none;
-    display: flex!important; 
+    /* display: flex!important; */ 
     align-items: center;
     cursor: pointer;
 }
