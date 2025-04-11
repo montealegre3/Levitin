@@ -145,3 +145,4 @@ function validarRespuestas(e) {
 }
 
 form.addEventListener("submit", validarRespuestas);
+
