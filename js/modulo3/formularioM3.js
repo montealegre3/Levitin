@@ -79,10 +79,23 @@ function capturarRespuestas() {
 }
 
 // Función para validar respuestas
+
 function validarRespuestas(e) {
   e.preventDefault();
 
-  
+  const idFormularioActual = "formulario3";
+  let usuarioActual = usuarios.find(user => user.logged);
+
+  // Si ya aprobó el formulario, evitar que lo responda de nuevo
+  if (usuarioActual && usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
+    resultadoMensaje.textContent = "Ya has aprobado este formulario. No puedes volver a responderlo. ✅";
+    const botonSubmit = document.querySelector("button[type='submit']");
+  if (botonSubmit) {
+    botonSubmit.disabled = true;
+  }
+    return;
+  }
+
   const respuestasCorrectas = {
     p1: "sandia",
     p2: "fresa",
@@ -91,46 +104,44 @@ function validarRespuestas(e) {
     p5: "naranja",
   };
 
-
   const respuestasUser = capturarRespuestas();
   let acumulado = Object.keys(respuestasCorrectas).reduce((count, key) => {
     return count + (respuestasUser[key] === respuestasCorrectas[key] ? 1 : 0);
   }, 0);
 
-  
   resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5.`;
 
-  let usuarioActual = usuarios.find(user => user.logged);
-  
   if (usuarioActual) {
     if (acumulado >= 3) {
       resultadoMensaje.textContent += " ¡Ganaste el examen! 😊";
-    
+
       if (!usuarioActual.avance3) {
         usuarioActual.progress += 25;
         usuarioActual.avance3 = true;
       } else {
         resultadoMensaje.textContent += " (Ya habías sumado el 25% anteriormente)";
       }
-    
-      const idFormularioActual = "formulario3";
+
+      // Guardar aprobación del formulario
       if (!usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
         usuarioActual.formulariosAprobados.push(idFormularioActual);
       }
-    
+
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
       progreso.textContent = `${usuarioActual.progress}%`;
       progreso.style.width = `${usuarioActual.progress}%`;
 
-      
+      // Desactivar formulario tras aprobación
+      form.querySelector("button[type='submit']").disabled = true;
+    } else {
+      resultadoMensaje.textContent += " Debes repetir el examen 😶";
     }
-    
   }
 
   console.log("Tu acumulado es:", acumulado);
     usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     estadoFormularios(); 
 }
-
 
 form.addEventListener("submit", validarRespuestas);

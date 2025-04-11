@@ -59,15 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const usuarioActual = usuarios.find(u => u.logged);
   const formularioId = "formulario2";
 
-  const enlaceFormulario = document.querySelector('#formulario a');
-  const botonFormulario = enlaceFormulario?.querySelector("button");
+  const enlaceFormulario = document.querySelector('#formulario2 a');
+  const botonSubmit = document.querySelector("button[type='submit']");
 
   if (usuarioActual && usuarioActual.formulariosAprobados?.includes(formularioId)) {
     // Desactiva el botón
-    botonFormulario.disabled = true;
-    botonFormulario.textContent = "Formulario ya respondido ✅";
-    botonFormulario.classList.add("btn-secondary");
-    botonFormulario.classList.remove("btn2");
+    botonSubmit.disabled = true;
+    botonSubmit.textContent = "Formulario ya respondido ✅";
+    botonSubmit.classList.add("btn-secondary");
+    botonSubmit.classList.remove("btn2");
 
     // Desactiva el enlace
     enlaceFormulario.removeAttribute("href");

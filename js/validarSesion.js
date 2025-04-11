@@ -114,4 +114,25 @@ export function estadoFormularios() {
   });
 }
 
+// Deja ver el contenido del módulo si el usuario está registrado 
+
+export function condicionarBotonSiguiente(rutaDestino) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const btnSiguiente = document.getElementById("btnSiguiente");
+    if (!btnSiguiente) return;
+
+    btnSiguiente.addEventListener("click", () => {
+      const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      const usuarioLogueado = usuarios.find(u => u.logged);
+
+      if (usuarioLogueado) {
+        window.location.href = "../../vistas/modulo1/tema1.html";
+      } else {
+        alert("Debes iniciar sesión para continuar.");
+        window.location.href = "../../vistas/registro.html";
+      }
+    });
+  });
+}
+
 
