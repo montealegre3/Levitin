@@ -1,9 +1,12 @@
-import { validarSesion , mostrarProgreso , estadoFormularios , condicionarBotonSiguiente} from "../validarSesion.js";
+import { validarSesion , mostrarProgreso , estadoFormularios , condicionarBotonesNavegacion} from "../validarSesion.js";
 
 validarSesion()
 mostrarProgreso()
 estadoFormularios()
-condicionarBotonSiguiente()
+condicionarBotonesNavegacion(
+  "../../vistas/modulo2/tema1.html",
+  "../../"
+);
 
 //Código para la funcionalidad del menu dropwdom
 
