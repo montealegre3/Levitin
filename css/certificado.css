@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .certificado {
+    background-color: #ffffff;
+    border: 2px solid #6497A8;
+    padding: 60px 80px;
+    width: 800px;
+    max-width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .certificado h1 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .certificado h2 {
+    font-size: 20px;
+    color: #555;
+    font-weight: normal;
+    margin-top: 30px;
+  }
+  
+  .nombre {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2c3e50;
+  }
+  
+  .curso {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .fecha {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .firmas {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  
+  .firmas div {
+    text-align: center;
+  }
+  
+  .linea {
+    border-top: 1px solid #000;
+    width: 180
+  }  
