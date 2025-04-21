@@ -116,22 +116,36 @@ export function estadoFormularios() {
 
 // Deja ver el contenido del módulo si el usuario está registrado 
 
-export function condicionarBotonSiguiente(rutaDestino) {
+export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior) {
   document.addEventListener("DOMContentLoaded", () => {
     const btnSiguiente = document.getElementById("btnSiguiente");
-    if (!btnSiguiente) return;
+    const btnAnterior = document.getElementById("btnAnterior");
 
-    btnSiguiente.addEventListener("click", () => {
-      const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-      const usuarioLogueado = usuarios.find(u => u.logged);
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const usuarioLogueado = usuarios.find(u => u.logged);
 
-      if (usuarioLogueado) {
-        window.location.href = rutaDestino;
-      } else {
-        alert("Debes iniciar sesión para continuar.");
-        window.location.href = "../../vistas/registro.html";
-      }
-    });
+    //Condicionar botón Siguiente 
+    if(btnSiguiente) {
+      btnSiguiente.addEventListener("click", () => {
+        if (usuarioLogueado) {
+          window.location.href = rutaSiguiente;
+        } else {
+          alert("Debes iniciar sesión para continuar.");
+          window.location.href = "../../vistas/registro.html";
+        }
+      });
+    }
+   
+    //condicionar botón Anterior
+    if(btnAnterior) {
+      btnAnterior.addEventListener("click", () => {
+        if (usuarioLogueado) {
+          window.location.href = rutaAnterior;
+        }else{
+          window.location.href = "../../";
+        }
+      })
+    }
   });
 }
 

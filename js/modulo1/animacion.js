@@ -1,9 +1,12 @@
-import { validarSesion , mostrarProgreso , estadoFormularios , condicionarBotonSiguiente } from "../validarSesion.js";
+import { validarSesion , mostrarProgreso , estadoFormularios , condicionarBotonesNavegacion } from "../validarSesion.js";
 
 validarSesion()
 mostrarProgreso()
 estadoFormularios()
-condicionarBotonSiguiente("../../vistas/modulo1/tema1.html");
+condicionarBotonesNavegacion(
+  "../../vistas/modulo1/tema1.html",
+  "../../"
+);
 
 
 
