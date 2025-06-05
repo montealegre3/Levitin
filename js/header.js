@@ -143,7 +143,7 @@ function header() {
   
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
-          <a id="certificadoBtn" href="./vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
+          <a href="./vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
           <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión 🍄</button></a>
         </div>
       </div>
