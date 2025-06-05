@@ -143,7 +143,7 @@ function header() {
   
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
-          <button class="btn1 btn-sm">Reclamar certificado</button>
+          <a id="certificadoBtn" href="./vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
           <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión 🍄</button></a>
         </div>
       </div>
@@ -286,7 +286,7 @@ function header() {
   
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
-          <a id="certidicadoBtn" href="../../vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
+          <a id="certificadoBtn" href="../vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
           <a class="btnCerrar" href="../cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
         </div>
       </div>
