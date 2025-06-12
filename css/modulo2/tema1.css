@@ -237,6 +237,20 @@ h1{
     color: #333;
 }
 
+.text-start {
+    text-align: left !important;
+    text-align: justify !important;
+    hyphens: auto;
+    text-justify: inter-word;
+}
+
+@media (max-width: 768px) {
+    .text-start {
+        text-align: left !important;
+        hyphens: none;
+    }
+}
+
 /* Estilos navegation-buttons */
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
