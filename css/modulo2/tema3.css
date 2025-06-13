@@ -217,18 +217,6 @@ h1{
     font-size: 2rem
 }
 
-/* Estilos carrusel */
-.carousel{
-    width: 80%;
-}
-
-.carrusel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 /* Estilos formulario */
 .card-text {
     text-align: justify;
@@ -271,6 +259,16 @@ h1{
     width: 45%;
 }
 
+/* Estilo del párrafo 1 */
+.parrafo1 {
+    max-width: 900px;
+}
+
+/* Estilos para el video */
+.ratio {
+    max-width: 600px; 
+    width: 100%;
+}
 
 /* Estilos navegation-buttons */
 .btn{

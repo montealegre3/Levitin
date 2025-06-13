@@ -110,7 +110,6 @@ h4{
 
 #icon {
     text-decoration: none;
-/*     display: flex!important;  */
     align-items: center;
     cursor: pointer;
 }
@@ -260,6 +259,18 @@ h6 {
 
 .imgBethoveen{
     width: 50%;
+}
+
+/* Estilo del párrafo 1 */
+
+.parrafo1 {
+    max-width: 700px;
+}
+
+/* Estilos audio Podcast */ 
+
+.w-100 {
+    max-width: 700px;
 }
 
 /* Estilos navigation buttons */

@@ -244,6 +244,12 @@ h6 {
     color: white;
 }
 
+/* Estilos párrafo */
+
+.parrafo1 {
+    max-width: 700px;
+}
+
 /* Estilos bethoveen */
 
 .beethoven-container {
