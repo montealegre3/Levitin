@@ -216,47 +216,9 @@ h1{
     font-size: 2rem
 }
 
-/* Estilos imagen pop up */
-.imgInstrumentos{
-    cursor: pointer;
-}
-
-/* Estilos cajita de comentarios */
-.card-text {
-    text-align: justify;
-    font-size: 0.9rem;
-    color: white; 
-    margin-top: 10px;
-}
-
-.card{
-    border: none;
-    max-width: 650px;
-    height: 350px;
-    margin-top: 50px;
-}
-.card-body2 {
-    font-size: 1rem;
-    line-height: 1.5; 
-    color: #333;
-}
-
-.btn2{
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 1.2rem;
-    background-color: #AF69A8; 
-    color: white;
-    margin-top: 100px;
-    margin-bottom: -50px;
-    padding: 10px 20px;
-    font-size: 1rem; 
-    border-radius: 4px;
-    border: none; 
-}
-
-.btn2:hover{
-    background-color: #b884ae;
-    color: white;
+/* Estilos de section 1 */ 
+.parrafo1 {
+    max-width: 1100px;
 }
 
 /* Estilos navegation-buttons */

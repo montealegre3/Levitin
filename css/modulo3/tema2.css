@@ -92,7 +92,6 @@ body {
 
 #icon {
     text-decoration: none;
-    /* display: flex!important; */ 
     align-items: center;
     cursor: pointer;
 }
@@ -221,6 +220,11 @@ h1{
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem; 
+}
+
+/* Estilos de section 1 */ 
+.parrafo1 {
+    max-width: 1100px;
 }
 
 

@@ -243,32 +243,11 @@ h1{
     color: #333;
 }
 
-.btn2{
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 1.2rem;
-    background-color: #DB9E3A; 
-    color: white;
-    margin-top: 100px;
-    margin-bottom: -50px;
-    padding: 10px 20px;
-    font-size: 1rem; 
-    border-radius: 4px;
-    border: none; 
-}
-
-.btn2:hover{
-    background-color: #e9bd78;
-    color: white;
-}
-
-
 /* Estilos navegation-buttons */
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem; 
 }
-
-
 
 /* Estilos footer */
 .footer{
