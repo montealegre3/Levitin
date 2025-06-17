@@ -218,31 +218,15 @@ h1{
     font-size: 2rem
 }
 
-/* Estilos section1 */
-
-.card-text {
-    text-align: justify;
-    font-size: 0.9rem;
-    color: white; 
-    margin-top: 10px;
-}
-
-.card{
-    border: none;
-    max-width: 650px;
-    height: 350px;
-    margin-top: 50px;
-}
-.card-body2 {
-    font-size: 1rem;
-    line-height: 1.5; 
-    color: #333;
-}
-
 /* Estilos navegation-buttons */
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem; 
+}
+
+/* Estilos de section 1 */ 
+.parrafo1 {
+    max-width: 1100px;
 }
 
 /* Estilos footer */

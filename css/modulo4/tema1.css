@@ -218,30 +218,29 @@ h1{
 }
 
 /* Estilos section1 */
-.imgMozart{
-    cursor: pointer;
+.custom-text {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  padding: 20px;
+  color: #333;
 }
 
-/* Estilos cajita de comentarios */
-
-.card-text {
-    text-align: justify;
-    font-size: 0.9rem;
-    color: white; 
-    margin-top: 10px;
+.custom-text p {
+  margin-bottom: 1.5rem;
 }
 
-.card{
-    border: none;
-    max-width: 650px;
-    height: 350px;
-    margin-top: 50px;
+.custom-text ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
 }
-.card-body2 {
-    font-size: 1rem;
-    line-height: 1.5; 
-    color: #333;
+
+.imgMozart {
+    width: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
+
 
 /* Estilos navegation-buttons */
 .btn{
