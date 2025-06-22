@@ -50,3 +50,22 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.classList.remove("show");
   });
 });
+
+// Animación Madonna 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imagenes = document.querySelectorAll(".madonna");
+  let index = 0;
+
+  // Asegura que solo la primera esté visible al inicio
+  imagenes.forEach((img, i) => {
+    img.classList.remove("active");
+    if (i === 0) img.classList.add("active");
+  });
+
+  setInterval(() => {
+    imagenes[index].classList.remove("active");
+    index = (index + 1) % imagenes.length;      
+    imagenes[index].classList.add("active");     
+  }, 2000);
+});

@@ -232,7 +232,7 @@ h6 {
     margin-top: 50px;
 }
 
-/* Añade esto a tu archivo CSS */
+
 .text-start {
     text-align: left !important;
     text-align: justify !important;
@@ -242,8 +242,9 @@ h6 {
 
 @media (max-width: 768px) {
     .text-start {
-        text-align: left !important;
+        text-align: center !important;
         hyphens: none;
+        max-width: 700px;
     }
 }
 
