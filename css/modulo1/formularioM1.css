@@ -1,18 +1,13 @@
 body {
-    padding-top: 80px;
-    height: 150vh;
-    background-image: url(../../assets/fondo-bethoveen.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
+    padding-top: 100px;
+}
 
 /* Estilos Header */
 
 .logo{
-    width: 150px;
-    height: 100px;
-    background-image: url(../../assets/logo-blanco.png);
+    width: 219px;
+    height: 106px;
+    background-image: url(../../assets/logo-azul.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -23,17 +18,17 @@ body {
 }
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.127);
+    background-color: white;
 }
 
 .nav-link{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #6497A8;
 }
 
 .nav-link:hover{
-    color: #b6b6b6;
+    color: #6497A8;
 }
 
 .dropdown-item{
@@ -69,7 +64,7 @@ body {
     .dropdown-menu .submenu-left {
         left: 0%;
     }
-} */
+}*/
 
 .dropdown-submenu {
     position: relative;
@@ -87,7 +82,20 @@ body {
   .dropdown-submenu .dropdown-menu.show {
     display: block;
   }
-  
+
+h1{
+    gap: 1rem;
+    color: #6497A8;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2rem
+}
+
+h5{
+    color: #6497A8;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
 /* Estilos del icono y titulo del dashboard */ 
 .user-menu-container {
     top: 50px;
@@ -95,7 +103,7 @@ body {
 }
 
 #icon {
-    text-decoration: none; 
+    text-decoration: none;
     align-items: center;
     cursor: pointer;
 }
@@ -111,11 +119,12 @@ body {
 h3 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
-    color: white;
+    color: #6497A8;
     display: block;
     margin: 0;
     font-size: 23px; 
 }
+
 
 /* Estilos del menú lateral */
 .user-menu {
@@ -204,21 +213,35 @@ h6 {
     color: white;
 }
 
-/* Estilos formulario */ 
-
+/* Estilos formulario */
 .formulario-contenido {
-  background-color: rgba(0, 0, 0, 0.519);
-  backdrop-filter: blur(4px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.148), rgba(0, 0, 0, 0.6)), url(../../assets/fondo-bethoveen.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+form#form {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
 .tab {
   display: none;
+  margin-bottom: 40px;
   animation: fadeIn 0.5s ease-in-out;
 }
 
 .tab.active {
   display: block;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -231,31 +254,117 @@ h6 {
   }
 }
 
-h1{
-    gap: 1rem;
-    color:  #a2ddf1;
-    font-family: 'Archivo Narrow', sans-serif;
+h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-h5{
-    color:  #a2ddf1;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 25px;
+h5 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
 }
 
-.parrafo{
-    color: white;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-}
-.respuesta{
-    color: white;
-    font-size: 16px;
-    text-align: justify;
+
+.parrafo {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
-.btn2{
+
+.form-check {
+  margin-bottom: 15px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.btn2 {
+  font-size: 1.1rem;
+  background-color: #5a8796;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 40px auto 0;
+  display: block;
+}
+
+.btn2:hover {
+  background-color: #6497A8;
+}
+
+
+/* Botón de volver */
+#btnVolver {
+  background-color: #6497A8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-family: 'Archivo Narrow', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Estilos modal de resultados */ 
+
+.modal-dialog {
+  max-width: 90%;
+  margin: auto;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 4px solid  #6497A8;;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+#modalContenido {
+  color:  #6497A8;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1rem;
+}
+
+#expresionesContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#expresionesContainer img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+#expresionesContainer img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  #expresionesContainer img {
+    width: 100px;
+  }
+}
+
+.btnModal{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
     background-color: #5a8796; 
@@ -267,24 +376,6 @@ h5{
     border-radius: 4px;
     border: none; 
 }
-
-.btn2:hover{
-    background-color: #6497A8;
-    color: white;
-}
-
-/* Estilos boton de regresar */ 
-#btnVolver {
-  background-color: white;
-  color: #5a8796;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  font-family: 'Archivo Narrow', sans-serif;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
 
 /*Estilos footer */
 

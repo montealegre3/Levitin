@@ -116,16 +116,17 @@ export function estadoFormularios() {
 
 // Deja ver el contenido del módulo si el usuario está registrado 
 
-export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior) {
+export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior, rutaAtras) {
   document.addEventListener("DOMContentLoaded", () => {
     const btnSiguiente = document.getElementById("btnSiguiente");
     const btnAnterior = document.getElementById("btnAnterior");
+    const btnAtras = document.getElementById("btnAtras");
 
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioLogueado = usuarios.find(u => u.logged);
 
-    //Condicionar botón Siguiente 
-    if(btnSiguiente) {
+    // Botón Siguiente
+    if (btnSiguiente) {
       btnSiguiente.addEventListener("click", () => {
         if (usuarioLogueado) {
           window.location.href = rutaSiguiente;
@@ -135,16 +136,28 @@ export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior) {
         }
       });
     }
-   
-    //condicionar botón Anterior
-    if(btnAnterior) {
+
+    // Botón Anterior
+    if (btnAnterior) {
       btnAnterior.addEventListener("click", () => {
         if (usuarioLogueado) {
           window.location.href = rutaAnterior;
-        }else{
+        } else {
           window.location.href = "../../";
         }
-      })
+      });
+    }
+
+    // Botón Atrás (módulo anterior)
+    if (btnAtras) {
+      btnAtras.addEventListener("click", () => {
+        if (usuarioLogueado) {
+          window.location.href = rutaAtras;
+        } else {
+          alert("Debes iniciar sesión para volver al módulo anterior.");
+          window.location.href = "../../vistas/registro.html";
+        }
+      });
     }
   });
 }

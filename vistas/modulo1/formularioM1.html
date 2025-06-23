@@ -38,7 +38,7 @@
                   <h5>Pregunta 1</h5>
                   <p class="parrafo">¿Cuál de estas frutas es una baya grande?</p>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pregunta1" value="sandia" required>
+                    <input class="form-check-input" type="radio" name="pregunta1" value="sandia">
                     <label class="form-check-label respuesta">Sandía</label>
                   </div>
                   <div class="form-check">
@@ -46,11 +46,11 @@
                     <label class="form-check-label respuesta">Melón</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pregunta1" value="melon">
+                    <input class="form-check-input" type="radio" name="pregunta1" value="manzana">
                     <label class="form-check-label respuesta">Manzana</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pregunta1" value="melon">
+                    <input class="form-check-input" type="radio" name="pregunta1" value="banano">
                     <label class="form-check-label respuesta">Banano</label>
                   </div>
                 </div>
@@ -149,6 +149,31 @@
             </div>
           </div>
         </div>
+    </div>
+    <!-- Modal de resultado -->
+    <div class="modal fade" id="modalResultado" tabindex="-1" aria-labelledby="modalResultadoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content text-center p-4">
+          <p id="modalContenido" class="fs-5 mb-4 textoModal"></p>
+      
+          <!-- Contenedor de expresiones -->
+          <div id="expresionesContainer" class="d-flex justify-content-center gap-3 flex-wrap">
+            <img src="../../assets/michael-feliz.webp" alt="">
+            <img src="../../assets/madonna-feliz.webp" alt="">
+            <img src="../../assets/selena-feliz.webp" alt="">
+            <img src="../../assets/bethoveen-feliz.webp" alt="">
+
+            <img src="../../assets/michael-aburrido.webp" alt="">
+            <img src="../../assets/madonna-aburrida.webp" alt="">
+            <img src="../../assets/selena-aburrida.webp" alt="">
+            <img src="../../assets/bethoveen-aburrido.webp" alt="">
+          </div>
+
+          <div class="text-center">
+            <button type="button" class="btnModal mt-4" id="cerrarModal">Cerrar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer text-white pt-5 pb-4 col-sm-12">

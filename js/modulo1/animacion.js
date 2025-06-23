@@ -4,8 +4,8 @@ validarSesion()
 mostrarProgreso()
 estadoFormularios()
 condicionarBotonesNavegacion(
-  "../../vistas/modulo1/tema5.html", 
-  "../../vistas/modulo1/tema3.html"
+ "../../vistas/modulo1/tema1.html",
+  "../../"
 );
 
 

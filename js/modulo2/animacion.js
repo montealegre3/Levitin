@@ -4,8 +4,9 @@ validarSesion()
 mostrarProgreso()
 estadoFormularios()
 condicionarBotonesNavegacion(
-  "../../vistas/modulo2/tema1.html",
-  "../../"
+  "../../vistas/modulo2/tema1.html", // Siguiente
+  "../../",                         // Anterior (inicio)
+  "../../vistas/modulo1/tema3.html" // Atras (módulo anterior)
 );
 
 //Código para la funcionalidad del menu dropwdom
