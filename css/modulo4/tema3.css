@@ -318,6 +318,24 @@ h3{
     font-size: 1rem; 
 }
 
+/* Estilos section 1 */
+
+.btnLink{
+    font-family: 'Archivo Narrow', sans-serif;
+    background-color: #DB9E3A; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px; 
+    border: none;
+} 
+
+h2{
+    color: #DB9E3A;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 25px;
+}
+
 
 /* Estilos footer */
 
