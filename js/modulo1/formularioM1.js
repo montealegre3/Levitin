@@ -146,3 +146,42 @@ function validarRespuestas(e) {
 
 form.addEventListener("submit", validarRespuestas);
 
+/* Animación para el formulario */ 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentTab = 0;
+    const tabs = document.querySelectorAll(".tab");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+    const submitBtn = document.getElementById("submitBtn");
+
+    function showTab(index) {
+      tabs.forEach((tab, i) => {
+        tab.classList.remove("active");
+        if (i === index) tab.classList.add("active");
+      });
+
+      prevBtn.style.display = index === 0 ? "none" : "inline-block";
+      nextBtn.style.display = index === tabs.length - 1 ? "none" : "inline-block";
+      submitBtn.classList.toggle("d-none", index !== tabs.length - 1);
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (currentTab < tabs.length - 1) {
+        currentTab++;
+        showTab(currentTab);
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentTab > 0) {
+        currentTab--;
+        showTab(currentTab);
+      }
+    });
+
+    // Mostrar la primera tab
+    showTab(currentTab);
+  });
+
+

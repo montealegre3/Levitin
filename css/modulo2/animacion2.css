@@ -29,7 +29,7 @@ body{
 }
 
 .navbar{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.414);
 }
 
 .nav-link{
@@ -103,7 +103,6 @@ body{
 
 #icon {
     text-decoration: none;
-    /* display: flex!important; */ 
     align-items: center;
     cursor: pointer;
 }
@@ -128,7 +127,7 @@ h3 {
 .user-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Oculto fuera de la pantalla */
+    right: -250px;
     width: 250px;
     height: 100%;
     background: white;
@@ -174,7 +173,6 @@ h6 {
     background: #f5f5f5;
 }
 
-/* Fondo oscuro cuando el menú está abierto */
 #overlay {
     position: fixed;
     top: 0;
@@ -186,7 +184,6 @@ h6 {
     z-index: 1500;
 }
 
-/* Mostrar el menú cuando esté activo */
 .user-menu.show {
     right: 0;
 }
@@ -213,8 +210,6 @@ h6 {
     color: white;
 }
 
-/* Terminan los estilos del menu lateral */
-
 /* Estilos section "introducción" */
 
 section#introduccion {
@@ -235,33 +230,44 @@ section#introduccion {
 }
 
 .contenido {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.827);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
 }
 
 .botones {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
 }
 
-.btn-left, .btn-right {
-    background-color: #6497A8;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+.btn-nav {
+  background-color: #6497A8;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  min-width: 150px;
 }
 
-.btn-left:hover, .btn-right:hover {
-    background-color: #4a7a89;
+.btn-nav:hover {
+  background-color: #4a7a89;
 }
 
-
+@media (max-width: 576px) {
+  .botones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 
 /* Estilos footer */
 .footer{

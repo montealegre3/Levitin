@@ -15,156 +15,140 @@
 <body>
 
     <div class="container">
-        <div class="row mt-5" id="titulo1">
-          <div class="col text-center mt-3">
-              <h1>Formulario módulo 1 🍄</h1>
-          </div>
-        </div>
         <div class="row mt-3">
           <div class="col text-center">
             <p id="resultado"></p>
             <p id="resultado2"></p>
           </div>
         </div>
-      <div class="container mt-5" id="form">
-          <div class="row justify-content-center">
-              <form id="form" class="col-md-8">
+        <div id="btnRegresarFlotante">
+          <a href="../modulo1/tema3.html">
+            <button id="btnVolver">
+            ←
+          </button>
+          </a>
+        </div>
+        <div class="formulario-bg" id="formulalrio">
+          <div class="container mt-5 py-5">
+            <div class="row justify-content-center">
+              <form id="form" class="col-md-10 p-4 rounded shadow formulario-contenido">
+                <h1 class="text-center fs-1 mb-5">Formulario módulo 1 🍄</h1>
+                <!-- Tabs de preguntas -->
+                <div class="tab active" data-tab="1">
                   <h5>Pregunta 1</h5>
-                  <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium omnis fuga blanditiis, est minima non quas, cupiditate saepe repellat illum quia aspernatur commodi, adipisci porro? Amet fugit deleniti officiis!</p>
+                  <p class="parrafo">¿Cuál de estas frutas es una baya grande?</p>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta1" value="sandia">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Sandía
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta1" value="sandia1">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta1" value="sandia" required>
+                    <label class="form-check-label respuesta">Sandía</label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta1" value="sandia2">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta1" value="sandia3">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                      </label>
-                  </div>
-                  <h5 class="mt-5">Pregunta 2</h5>
-                  <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium omnis fuga blanditiis, est minima non quas, cupiditate saepe repellat illum quia aspernatur commodi, adipisci porro? Amet fugit deleniti officiis!</p>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta2" value="fresa1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta2" value="fresa">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Fresa
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta1" value="melon">
+                    <label class="form-check-label respuesta">Melón</label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta2" value="fresa2">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta2" value="fresa3">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                      </label>
-                  </div>
-                  <h5 class="mt-5">Pregunta 3</h5>
-                  <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium omnis fuga blanditiis, est minima non quas, cupiditate saepe repellat illum quia aspernatur commodi, adipisci porro? Amet fugit deleniti officiis!</p>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta3" value="pera1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta3" value="pera2">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta1" value="melon">
+                    <label class="form-check-label respuesta">Manzana</label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta3" value="pera3">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta3" value="pera">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Pera
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta1" value="melon">
+                    <label class="form-check-label respuesta">Banano</label>
                   </div>
-                  <h5 class="mt-5">Pregunta 4</h5>
-                  <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium omnis fuga blanditiis, est minima non quas, cupiditate saepe repellat illum quia aspernatur commodi, adipisci porro? Amet fugit deleniti officiis!</p>
+                </div>
+
+                <div class="tab" data-tab="2">
+                  <h5>Pregunta 2</h5>
+                  <p class="parrafo">¿Cuál fruta es roja y tiene semillas por fuera?</p>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta4" value="mango1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta4" value="mango">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Mango
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta2" value="fresa" required>
+                    <label class="form-check-label respuesta">Fresa</label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta4" value="mango2">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta4" value="mango3">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                      </label>
-                  </div>
-                  <h5 class="mt-5">Pregunta 5</h5>
-                  <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium omnis fuga blanditiis, est minima non quas, cupiditate saepe repellat illum quia aspernatur commodi, adipisci porro? Amet fugit deleniti officiis!</p>
-                  <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta5" value="naranja1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta2" value="cereza">
+                    <label class="form-check-label respuesta">Cereza</label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta5" value="naranja2">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta2" value="cereza">
+                    <label class="form-check-label respuesta">Pera</label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta5" value="naranja">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Naranja
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta2" value="cereza">
+                    <label class="form-check-label respuesta">Arándano</label>
+                  </div>
+                </div>
+
+                <div class="tab" data-tab="3">
+                  <h5>Pregunta 3</h5>
+                  <p class="parrafo">¿Cuál de estas frutas es verde y tiene textura rugosa?</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta3" value="guayaba" required>
+                    <label class="form-check-label respuesta">Guayaba</label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="pregunta5" value="naranja3">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                      </label>
+                    <input class="form-check-input" type="radio" name="pregunta3" value="pera">
+                    <label class="form-check-label respuesta">Pera</label>
                   </div>
-                  <div class="d-flex justify-content-start mt-4">
-                      <button type="submit" class="btn2">Enviar respuestas</button>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta3" value="pera">
+                    <label class="form-check-label respuesta">Maracuyá</label>
                   </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta3" value="pera">
+                    <label class="form-check-label respuesta">Aguacate</label>
+                  </div>
+                </div>
+
+                <div class="tab" data-tab="4">
+                  <h5>Pregunta 4</h5>
+                  <p class="parrafo">¿Cuál fruta es tropical y tiene mucho jugo?</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta4" value="mango" required>
+                    <label class="form-check-label respuesta">Mango</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta4" value="uva">
+                    <label class="form-check-label respuesta">Uva</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta4" value="uva">
+                    <label class="form-check-label respuesta">Frambuesa</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta4" value="uva">
+                    <label class="form-check-label respuesta">Piña</label>
+                  </div>
+                </div>
+
+                <div class="tab" data-tab="5">
+                  <h5>Pregunta 5</h5>
+                  <p class="parrafo">¿Cuál fruta es cítrica y tiene color naranja?</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta5" value="naranja" required>
+                    <label class="form-check-label respuesta">Naranja</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta5" value="mandarina">
+                    <label class="form-check-label respuesta">Mandarina</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta5" value="mandarina">
+                    <label class="form-check-label respuesta">Sandía</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta5" value="mandarina">
+                    <label class="form-check-label respuesta">Coco</label>
+                  </div>
+                </div>
+
+                <!-- Botones de navegación -->
+                <div class="text-center mt-4">
+                  <button type="button" class="btn2 me-2" id="prevBtn">Anterior</button>
+                  <button type="button" class="btn2" id="nextBtn">Siguiente</button>
+                  <button type="submit" class="btn2 d-none" id="submitBtn">Enviar respuestas</button>
+                </div>
               </form>
+            </div>
           </div>
-      </div>
+        </div>
     </div>
 
     <footer class="footer text-white pt-5 pb-4 col-sm-12">

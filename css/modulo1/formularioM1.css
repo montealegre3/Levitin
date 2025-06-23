@@ -1,38 +1,43 @@
 body {
     padding-top: 80px;
+    height: 150vh;
+    background-image: url(../../assets/fondo-bethoveen.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 
 /* Estilos Header */
 
 .logo{
-    width: 219px;
-    height: 106px;
-    background-image: url(../../assets/logo-azul.png);
+    width: 150px;
+    height: 100px;
+    background-image: url(../../assets/logo-blanco.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
 }
 
-  .menu{
+.menu{
     padding-top: 80px;
 }
 
 .navbar{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.127);
 }
 
 .nav-link{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
-    color: #6497A8;
+    color: #ffffff;
 }
 
 .nav-link:hover{
-    color:  #6497A8;
+    color: #b6b6b6;
 }
 
 .dropdown-item{
-    color:  #6497A8;
+    color: #6497A8;
 }
 
 .dropdown-menu .submenu{
@@ -90,8 +95,7 @@ body {
 }
 
 #icon {
-    text-decoration: none;
-   /*  display: flex!important; */ 
+    text-decoration: none; 
     align-items: center;
     cursor: pointer;
 }
@@ -107,7 +111,7 @@ body {
 h3 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
-    color: #6497A8;
+    color: white;
     display: block;
     margin: 0;
     font-size: 23px; 
@@ -117,7 +121,7 @@ h3 {
 .user-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Oculto fuera de la pantalla */
+    right: -250px;
     width: 250px;
     height: 100%;
     background: white;
@@ -163,7 +167,6 @@ h6 {
     background: #f5f5f5;
 }
 
-/* Fondo oscuro cuando el menú está abierto */
 #overlay {
     position: fixed;
     top: 0;
@@ -171,11 +174,10 @@ h6 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: none; /* Oculto por defecto */
+    display: none; 
     z-index: 1500;
 }
 
-/* Mostrar el menú cuando esté activo */
 .user-menu.show {
     right: 0;
 }
@@ -201,35 +203,57 @@ h6 {
     background-color: #8080BC;
     color: white;
 }
-/* Terminan los estilos del menu lateral */
 
+/* Estilos formulario */ 
 
+.formulario-contenido {
+  background-color: rgba(0, 0, 0, 0.519);
+  backdrop-filter: blur(4px);
+}
 
-/* Estilos de titulos */
+.tab {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 h1{
     gap: 1rem;
-    color:  #6497A8;
+    color:  #a2ddf1;
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 2rem
 }
 
 h5{
-    color:  #6497A8;
+    color:  #a2ddf1;
     font-family: 'Archivo Narrow', sans-serif;
+    font-size: 25px;
 }
 
-
-/* Estilos de textos */
 .parrafo{
-    color: black;
+    color: white;
     font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.respuesta{
+    color: white;
     font-size: 16px;
     text-align: justify;
 }
-
-
-/* Estilos de botón */
 
 .btn2{
     font-family: 'Archivo Narrow', sans-serif;
@@ -247,6 +271,18 @@ h5{
 .btn2:hover{
     background-color: #6497A8;
     color: white;
+}
+
+/* Estilos boton de regresar */ 
+#btnVolver {
+  background-color: white;
+  color: #5a8796;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-family: 'Archivo Narrow', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 
