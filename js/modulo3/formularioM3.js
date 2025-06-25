@@ -89,10 +89,7 @@ function validarRespuestas(e) {
   // Si ya aprobó el formulario, evitar que lo responda de nuevo
   if (usuarioActual && usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
     resultadoMensaje.textContent = "Ya has aprobado este formulario. No puedes volver a responderlo. ✅";
-    const botonSubmit = document.querySelector("button[type='submit']");
-  if (botonSubmit) {
-    botonSubmit.disabled = true;
-  }
+    form.querySelector("button[type='submit']").disabled = true; // Desactiva el botón
     return;
   }
 
@@ -105,43 +102,131 @@ function validarRespuestas(e) {
   };
 
   const respuestasUser = capturarRespuestas();
+
+  // Validar que todas las preguntas estén respondidas
+  if (Object.values(respuestasUser).some(val => !val)) {
+    alert("Por favor responde todas las preguntas antes de enviar.");
+    return;
+  }
+
+  // Calcular acumulado de respuestas correctas
   let acumulado = Object.keys(respuestasCorrectas).reduce((count, key) => {
     return count + (respuestasUser[key] === respuestasCorrectas[key] ? 1 : 0);
   }, 0);
 
-  resultadoMensaje.textContent = `Tuviste ${acumulado} respuestas correctas de 5.`;
+  const modalResultado = new bootstrap.Modal(document.getElementById('modalResultado'));
+  const modalContenido = document.getElementById('modalContenido');
+  const expresionesContainer = document.getElementById('expresionesContainer');
+
+  // Limpiar expresiones anteriores
+  expresionesContainer.innerHTML = "";
+
+  // Imágenes para cada estado
+  const imagenesFelices = [
+    "../../assets/bethoveen-feliz.webp",
+    "../../assets/madonna-feliz.webp",
+    "../../assets/michael-feliz.webp",
+    "../../assets/selena-feliz.webp"
+  ];
+
+  const imagenesTristes = [
+    "../../assets/bethoveen-aburrido.webp",
+    "../../assets/madonna-aburrida.webp",
+    "../../assets/michael-aburrido.webp",
+    "../../assets/selena-aburrida.webp"
+  ];
+
+  let mensaje = `Tuviste ${acumulado} respuestas correctas de 5. `;
 
   if (usuarioActual) {
     if (acumulado >= 3) {
-      resultadoMensaje.textContent += " ¡Ganaste el examen! 😊";
-
-      if (!usuarioActual.avance3) {
-        usuarioActual.progress += 25;
-        usuarioActual.avance3 = true;
-      } else {
-        resultadoMensaje.textContent += " (Ya habías sumado el 25% anteriormente)";
-      }
-
-      // Guardar aprobación del formulario
+      mensaje += "¡Ganaste el examen!";
+      
       if (!usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
-        usuarioActual.formulariosAprobados.push(idFormularioActual);
+      usuarioActual.formulariosAprobados.push(idFormularioActual);
       }
+
+      // Calcular progreso basado en formularios aprobados
+      usuarioActual.progress = usuarioActual.formulariosAprobados.length * 25;
 
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
       progreso.textContent = `${usuarioActual.progress}%`;
       progreso.style.width = `${usuarioActual.progress}%`;
 
-      // Desactivar formulario tras aprobación
       form.querySelector("button[type='submit']").disabled = true;
+
+      // Mostrar imágenes felices
+      imagenesFelices.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = "Expresión feliz";
+        expresionesContainer.appendChild(img);
+      });
+
     } else {
-      resultadoMensaje.textContent += " Debes repetir el examen 😶";
+      mensaje += "Debes repetir el examen";
+
+      // Mostrar imágenes tristes
+      imagenesTristes.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = "Expresión triste";
+        expresionesContainer.appendChild(img);
+      });
     }
   }
 
+  modalContenido.textContent = mensaje;
+  modalResultado.show();
+
   console.log("Tu acumulado es:", acumulado);
-    usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    estadoFormularios(); 
+  estadoFormularios(); 
 }
 
 form.addEventListener("submit", validarRespuestas);
+
+document.getElementById("cerrarModal").addEventListener("click", () => {
+  const modal = bootstrap.Modal.getInstance(document.getElementById('modalResultado'));
+  modal.hide();
+  window.location.href = "../modulo3/tema3.html";
+});
+
+
+
+/* Animación para el formulario */ 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentTab = 0;
+    const tabs = document.querySelectorAll(".tab");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+    const submitBtn = document.getElementById("submitBtn");
+
+    function showTab(index) {
+      tabs.forEach((tab, i) => {
+        tab.classList.remove("active");
+        if (i === index) tab.classList.add("active");
+      });
+
+      prevBtn.style.display = index === 0 ? "none" : "inline-block";
+      nextBtn.style.display = index === tabs.length - 1 ? "none" : "inline-block";
+      submitBtn.classList.toggle("d-none", index !== tabs.length - 1);
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (currentTab < tabs.length - 1) {
+        currentTab++;
+        showTab(currentTab);
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentTab > 0) {
+        currentTab--;
+        showTab(currentTab);
+      }
+    });
+
+    // Mostrar la primera tab
+    showTab(currentTab);
+  });

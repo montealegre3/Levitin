@@ -251,7 +251,6 @@ h2{
 
 .btn1{
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 1.2rem;
     background-color: #6a6a9b; 
     color: white;
     font-size: 1rem; 
@@ -265,7 +264,17 @@ h2{
     color: white;
 }
 
-
+#btnCertificado:disabled {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  color: #555;
+  cursor: not-allowed;
+}
 
 /* Estilos de las card */
 

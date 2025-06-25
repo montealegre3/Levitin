@@ -144,16 +144,12 @@ function validarRespuestas(e) {
     if (acumulado >= 3) {
       mensaje += "¡Ganaste el examen!";
 
-      if (!usuarioActual.avance) {
-        usuarioActual.progress += 25;
-        usuarioActual.avance = true;
-      } else {
-        mensaje += " (Ya habías sumado el 25% anteriormente)";
+      if (!usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
+      usuarioActual.formulariosAprobados.push(idFormularioActual);
       }
 
-      if (!usuarioActual.formulariosAprobados.includes(idFormularioActual)) {
-        usuarioActual.formulariosAprobados.push(idFormularioActual);
-      }
+      // Calcular progreso basado en formularios aprobados
+      usuarioActual.progress = usuarioActual.formulariosAprobados.length * 25;
 
       localStorage.setItem("usuarios", JSON.stringify(usuarios));
       progreso.textContent = `${usuarioActual.progress}%`;

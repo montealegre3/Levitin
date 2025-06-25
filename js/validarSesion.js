@@ -162,4 +162,49 @@ export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior, rutaAt
   });
 }
 
+// Activar o desactivar el botón de Certificado //
+
+document.addEventListener("DOMContentLoaded", () => {
+  const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+  const usuario = usuarios.find(u => u.logged);
+  const btnCertificado = document.getElementById("btnCertificado");
+
+  if (usuario && btnCertificado) {
+    const progreso = usuario.progress || 0;
+
+    // Verifica si completó el 100%
+    if (progreso >= 100) {
+      // Activar botón
+      btnCertificado.removeAttribute("disabled");
+      btnCertificado.classList.add("btn-success");
+      btnCertificado.textContent = "Descargar certificado";
+
+      // Detectar la ruta según el contexto
+      const currentPath = window.location.pathname;
+
+      let rutaCertificado = "";
+      if (currentPath.endsWith("index.html") || currentPath === "/") {
+        rutaCertificado = "./vistas/certificado.html";
+      } else if (currentPath.includes("../../vistas/modulo")) {
+        rutaCertificado = "../../certificado.html";
+      } else if (currentPath.includes("/vistas/")) {
+        rutaCertificado = "../certificado.html";
+      } else {
+        rutaCertificado = "./vistas/certificado.html";
+      }
+
+      btnCertificado.addEventListener("click", () => {
+        window.location.href = rutaCertificado;
+      });
+
+    } else {
+      // Desactivado hasta completar el progreso
+      btnCertificado.setAttribute("disabled", "true");
+      btnCertificado.title = "Debes completar todos los formularios para reclamar tu certificado.";
+      btnCertificado.textContent = "Reclamar certificado";
+    }
+  }
+});
+
+
 

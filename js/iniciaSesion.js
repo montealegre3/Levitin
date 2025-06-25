@@ -9,7 +9,6 @@ function iniciarSesion(e) {
 
     //Para saber si el usuario existe
 
-
     for (let i = 0; i < usuarios.length; i++) {
 
         if (usuarios[i].userN === userName.value.trim() && usuarios[i].userP === password.value.trim()) {
@@ -25,13 +24,6 @@ function iniciarSesion(e) {
     }
 
     alert("Usuario o contraseña incorrectos.");
-
-
-  
- 
-    
-
-
 
     formulario.reset();
 }

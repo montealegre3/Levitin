@@ -163,7 +163,6 @@ h6 {
     background: #f5f5f5;
 }
 
-/* Fondo oscuro cuando el menú está abierto */
 #overlay {
     position: fixed;
     top: 0;
@@ -199,6 +198,18 @@ h6 {
 .btn1:hover{
     background-color: #8080BC;
     color: white;
+}
+
+#btnCertificado:disabled {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  color: #555;
+  cursor: not-allowed;
 }
 
 

@@ -86,8 +86,6 @@ body {
     display: block;
 }
 
-/* Estilos del icono y titulo del dashboard */
-
 .user-menu-container {
     top: 50px;
     z-index: 1050; 
@@ -95,7 +93,6 @@ body {
 
 #icon {
     text-decoration: none;
-    /* display: flex!important; */ 
     align-items: center;
     cursor: pointer;
 }
@@ -168,7 +165,6 @@ h6 {
     background: #f5f5f5;
 }
 
-/* Fondo oscuro cuando el menú está abierto */
 #overlay {
     position: fixed;
     top: 0;
@@ -204,6 +200,18 @@ h6 {
 .btn1:hover{
     background-color: #8080BC;
     color: white;
+}
+
+#btnCertificado:disabled {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  color: #555;
+  cursor: not-allowed;
 }
 
 
@@ -259,7 +267,7 @@ h3{
     animation: moveImage 6s linear infinite;
     pointer-events: none;
     opacity: 0.7;
-    width: 90px;  /* Ajusta el tamaño aquí */
+    width: 90px; 
    
   }
   

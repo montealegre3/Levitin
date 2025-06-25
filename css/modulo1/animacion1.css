@@ -149,10 +149,10 @@ h3 {
     border-bottom: 1px solid #ddd;
 }
 
-h5 {
+h6 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
-    color: #ffffff;
+    color: #6497A8;
     display: block;
     font-size: 20px;
 }
@@ -209,6 +209,18 @@ h5 {
 .btn1:hover{
     background-color: #8080BC;
     color: white;
+}
+
+#btnCertificado:disabled {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  color: #555;
+  cursor: not-allowed;
 }
 
 /* Estilos section "introducción" */

@@ -131,7 +131,7 @@ function header() {
                   </div>
                   <div id="formulario2" class="d-flex justify-content-between align-items-center">
                       <a href="./vistas/modulo2/formularioM2.html"><p>Formulario 2</p></a>
-                      <i class="estado-formulario text-success fs-5"></i>
+                      <i class="estado-formulario fs-5"></i>
                   </div>
                   <div id="formulario3" class="d-flex justify-content-between align-items-center">
                       <a href="./vistas/modulo3/formularioM3.html"><p>Formulario 3</p></a>
@@ -146,8 +146,8 @@ function header() {
   
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
-          <a href="./vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
-          <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión 🍄</button></a>
+          <button id="btnCertificado" class="btn-sm" disabled>Reclamar certificado</button>
+          <a class="btnCerrar" href="./vistas/cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
         </div>
       </div>
   
@@ -289,7 +289,7 @@ function header() {
   
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
-          <a id="certificadoBtn" href="../../vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
+          <button id="btnCertificado" class="btn-sm" disabled>Reclamar certificado</button>
           <a class="btnCerrar" href="../cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
         </div>
       </div>
@@ -435,7 +435,7 @@ function header() {
   
         <!-- Botones finales -->
         <div class="d-flex flex-column align-items-center gap-2">
-          <a id="certificadoBtn" href="../../vistas/certificado.html"><button class="btn1 btn-sm">Reclamar certificado</button></a>
+          <button id="btnCertificado" class="btn-sm" disabled>Reclamar certificado</button>
           <a class="btnCerrar" href="../cerrar.html"><button class="btn1 btn-sm">Cerrar sesión</button></a>
         </div>
       </div>

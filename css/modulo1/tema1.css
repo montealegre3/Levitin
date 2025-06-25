@@ -103,8 +103,6 @@ h5{
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-
-/* Estilos del icono y titulo del dashboard */ 
 .user-menu-container {
     top: 50px;
     z-index: 1050; 
@@ -112,7 +110,6 @@ h5{
 
 #icon {
     text-decoration: none;
-    /* display: flex!important;  */
     align-items: center;
     cursor: pointer;
 }
@@ -138,7 +135,7 @@ h3 {
 .user-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Oculto fuera de la pantalla */
+    right: -250px;
     width: 250px;
     height: 100%;
     background: white;
@@ -184,7 +181,6 @@ h6 {
     background: #f5f5f5;
 }
 
-/* Fondo oscuro cuando el menú está abierto */
 #overlay {
     position: fixed;
     top: 0;
@@ -192,7 +188,7 @@ h6 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: none; /* Oculto por defecto */
+    display: none;
     z-index: 1500;
 }
 
@@ -222,6 +218,17 @@ h6 {
     color: white;
 }
 
+#btnCertificado:disabled {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  color: #555;
+  cursor: not-allowed;
+}
 
 /* Estilos section1 */
 
