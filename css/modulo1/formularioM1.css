@@ -1,13 +1,24 @@
-body {
-    padding-top: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos Header */
+body{
+    background-color: #000;
+    background-image: url(../../assets/fondo-bethoveen.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+/* Estilos header */
 
 .logo{
-    width: 219px;
-    height: 106px;
-    background-image: url(../../assets/logo-azul.png);
+    width: 150px;
+    height: 100px;
+    background-image: url(../../assets/logo-blanco.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -18,17 +29,17 @@ body {
 }
 
 .navbar{
-    background-color: white;
+     background-color: rgba(0, 0, 0, 0.414);
 }
 
 .nav-link{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
-    color: #6497A8;
+    color: #ffffff;
 }
 
 .nav-link:hover{
-    color: #6497A8;
+    color: #b6b6b6;
 }
 
 .dropdown-item{
@@ -64,7 +75,7 @@ body {
     .dropdown-menu .submenu-left {
         left: 0%;
     }
-}*/
+} */
 
 .dropdown-submenu {
     position: relative;
@@ -83,20 +94,6 @@ body {
     display: block;
   }
 
-h1{
-    gap: 1rem;
-    color: #6497A8;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 2rem
-}
-
-h5{
-    color: #6497A8;
-    font-family: 'Archivo Narrow', sans-serif;
-}
-
-
-/* Estilos del icono y titulo del dashboard */ 
 .user-menu-container {
     top: 50px;
     z-index: 1050; 
@@ -119,12 +116,11 @@ h5{
 h3 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
-    color: #6497A8;
+    color: #ffffff;
     display: block;
     margin: 0;
     font-size: 23px; 
 }
-
 
 /* Estilos del menú lateral */
 .user-menu {
@@ -176,6 +172,7 @@ h6 {
     background: #f5f5f5;
 }
 
+/* Fondo oscuro cuando el menú está abierto */
 #overlay {
     position: fixed;
     top: 0;
@@ -183,7 +180,7 @@ h6 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: none; 
+    display: none;
     z-index: 1500;
 }
 
@@ -227,21 +224,34 @@ h6 {
 
 /* Estilos formulario */
 .formulario-contenido {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.148), rgba(0, 0, 0, 0.6)), url(../../assets/fondo-bethoveen.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  backdrop-filter: blur(6px);
+  background-color: #ddd;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.formulario-contenido {
+  text-align: center;
+}
+
+.tituloForm,
+.parrafo {
+  text-align: center;
+}
+
+.form-check-label {
+  text-align: left;
+  display: block;
 }
 
 form#form {
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #222020;
 }
 
 .tab {
@@ -267,21 +277,21 @@ form#form {
 }
 
 h1 {
-  color: #ffffff;
+  color: #6497A8;
   font-size: 2.2rem;
   margin-bottom: 40px;
   text-align: center;
 }
 
-h5 {
-  color: #ffffff;
+.tituloForm {
+  color: #6497A8;
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
 
 
 .parrafo {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.1rem;
   text-align: justify;
   margin-bottom: 20px;
@@ -297,7 +307,7 @@ h5 {
 }
 
 .form-check-label {
-  color: #ffffff;
+  color: #000000;
   font-size: 1rem;
 }
 
@@ -393,7 +403,9 @@ h5 {
 
 .footer{
     background-color:  #6497A8;
-    margin-top: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 60px;
 }
 
 .footer h5{
