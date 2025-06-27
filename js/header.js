@@ -156,7 +156,7 @@ function header() {
       `
     } else if (isAboutPage) {
         // Menú ESPECIAL para "Sobre Nosotros"
-        console.log("Estás en Sobre Nosotros");
+        console.log("No estás en index");
         div.innerHTML = `  
         <div class="row" id="menu">
           <div class="col-lg-12 menu">
