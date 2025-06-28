@@ -1,9 +1,9 @@
 .certificado {
   margin-top: 50px;
   position: relative;
-  max-width: 1000px; /* Ajusta el ancho deseado */
+  max-width: 1000px;
   width: 100%;
-  aspect-ratio: 1.414 / 1; /* Por ejemplo, proporción A4 vertical (aprox. 1.414) */
+  aspect-ratio: 1.414 / 1;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -61,7 +61,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.6);
+  background-color: #6497A8;
   display: flex;
   align-items: center;
   justify-content: center;

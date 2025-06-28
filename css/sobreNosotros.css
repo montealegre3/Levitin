@@ -1,3 +1,195 @@
+body {
+    padding-top: 80px;
+}
+
+/* Estilos del header */
+.menu{
+    padding-top: 80px;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    color: #6497A8;
+}
+
+.nav-link:hover{
+    color: #6497A8;
+}
+
+.dropdown-item{
+    color: #6497A8;
+}
+
+.dropdown-menu .submenu{
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+.dropdown-menu .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+@media(max-width:800px) {
+    .dropdown-menu .submenu {
+        left: 30%;
+        top: 0px;
+    }
+
+    .dropdown-menu .multi-menu {
+        left: 30%;
+    }
+
+    .dropdown-menu .submenu-left {
+        left: 0%;
+    }
+} */
+
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    margin-top: 0;
+    display: none;
+    left: auto !important;
+    right: 100% !important;
+    transform: translateX(-1px);
+  }
+  
+  .dropdown-submenu .dropdown-menu.show {
+    display: block;
+  }
+  
+/* Menu lateral */
+
+.user-menu-container {
+    top: 50px;
+    z-index: 1050; 
+}
+
+#icon {
+    text-decoration: none;
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
+    color: #6497A8;
+    display: block;
+    margin: 0;
+    font-size: 23px; 
+}
+
+/* Estilos del menú lateral */
+.user-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h6 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
+    color: #6497A8;
+    display: block;
+    font-size: 20px;
+}
+
+.user-menu p {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.user-menu a {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.user-menu li:hover {
+    background: #f5f5f5;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1500;
+}
+
+.user-menu.show {
+    right: 0;
+}
+
+#overlay.show {
+    display: block;
+}
+
+/* Estilos btn menu lateral */
+.btn1{
+    font-family: 'Archivo Narrow', sans-serif;
+    background-color: #6a6a9b; 
+    color: white;
+    font-size: 1rem; 
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px; 
+}
+
+.btn1:hover{
+    background-color: #8080BC;
+    color: white;
+}
+
 #btnCertificado:disabled {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem;
@@ -8,4 +200,74 @@
   border: none;
   color: #555;
   cursor: not-allowed;
+}
+
+/* Estilos sectiion 1 */
+.sobre-icono {
+  width: 35%;
+  object-fit: contain;
+}
+
+.tituloP{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #6497A8;
+  font-size: 4.5rem;
+}
+
+.tituloS{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #8080BC;
+  font-size: 3rem;
+}
+
+.tituloS2{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #AF69A8;
+  font-size: 3rem;
+}
+
+.tituloEquipo{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #AF69A8;
+  font-size: 1.8rem;
+}
+
+.tituloRevista{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #DB9E3A;
+  font-size: 4rem;
+}
+
+/* Estilos footer */
+.footer{
+    background-color: #6497A8;
+    margin-top: 150px;
+}
+
+h5{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer p{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col-md-5 .list-inline{
+    margin-top: 10px;
+}
+
+.col-md-5 .list-inline-item{
+    display: inline-block;
+}
+
+.col-md-5 .list-inline-item i{
+    font-size: 1.5rem;
 }
