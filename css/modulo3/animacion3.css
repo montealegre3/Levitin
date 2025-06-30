@@ -224,7 +224,6 @@ h6 {
 /* Estilos section "introducción" */
 
 section#introduccion {
-    font-family: 'Archivo Narrow', sans-serif;
     height: calc(100vh - 60px); 
     display: flex;
     flex-direction: column;
@@ -238,6 +237,7 @@ section#introduccion {
 #introduccion h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 .contenido {
@@ -254,6 +254,7 @@ section#introduccion {
   align-items: center;
   margin-top: 30px;
   gap: 10px;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 .btn-nav {
