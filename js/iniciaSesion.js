@@ -40,5 +40,5 @@ function iniciarSesion(e) {
 formulario.addEventListener("submit", iniciarSesion);
 
 document.getElementById("btnComenzar").addEventListener("click", () => {
-    window.location.href = "../../index.html";
+    window.location.href = "/";
 });
