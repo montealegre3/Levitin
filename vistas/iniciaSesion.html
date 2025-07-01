@@ -19,7 +19,7 @@
   <div class="container">
       <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="contenedor">
-            <form id="formulario1" action="#">
+            <form id="formulario1">
                 <h2 class="fs-1">Inicia Sesión</h2>
 
                 <div class="input-contenedor">
@@ -41,6 +41,15 @@
         </div>
       </div>
   </div>
+
+  <!-- Modal -->
+    <div id="bienvenidaPopup" class="popup-oculto">
+    <div class="popup-bienvenida">
+        <h2 class="titulo-bienvenida">Bienvenid@ <span id="nombreUsuario"></span>!</h2>
+        <button id="btnComenzar" class="btn-comenzar mb-5 mt-3">Comienza</button>
+        <img src="../assets/BienvenidoImg.webp" alt="Personajes" class="imagen-personajes mt-5">
+    </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/iniciaSesion.js"></script>

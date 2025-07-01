@@ -4,11 +4,12 @@ body {
 
 /* Estilos del header */
 .menu{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .navbar{
     background-color: white;
+    height: 150px;
 }
 
 .nav-link{
@@ -204,7 +205,7 @@ h6 {
 
 /* Estilos sectiion 1 */
 .sobre-icono {
-  width: 35%;
+  width: 60%;
   object-fit: contain;
 }
 
@@ -226,16 +227,244 @@ h6 {
   font-size: 3rem;
 }
 
-.tituloEquipo{
-  font-family: 'Archivo Narrow', sans-serif;
-  color: #AF69A8;
-  font-size: 1.8rem;
-}
-
 .tituloRevista{
   font-family: 'Archivo Narrow', sans-serif;
   color: #DB9E3A;
   font-size: 4rem;
+}
+
+.todosImg{
+    width: 78%;
+}
+
+.textoSobre{
+    margin-top: 18%;
+    padding-left: -0px;
+    max-width: 500px;
+    text-align: left;
+}
+
+
+hr.containerLinea {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, #6497A8, #41626c);
+  width: 70%;
+  margin: 2rem auto;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+/* Estilo equipo creativo */
+.card-equipo {
+  background: linear-gradient(135deg, #AF69A8, #ffc1f9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-equipo:hover {
+  transform: translateY(-5px);
+}
+
+.imagen-equipo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.tituloEquipo{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.card-equipo p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #352537;
+}
+
+/* Animación del logo */
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+
+.logo-container a {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: cambioLogo 12s infinite;
+}
+
+.logo-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-container a:nth-child(1) {
+  animation-delay: 0s;
+}
+.logo-container a:nth-child(2) {
+  animation-delay: 3s;
+}
+.logo-container a:nth-child(3) {
+  animation-delay: 6s;
+}
+.logo-container a:nth-child(4) {
+  animation-delay: 9s;
+}
+
+@keyframes cambioLogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(1);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.1);
+  }
+  15% {
+    transform: translateX(-50%) scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.1);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(-50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+/* Cambio de color del título */
+.tituloP {
+  animation: cambioColorTexto 12s infinite;
+  transition: color 0.5s ease;
+}
+
+@keyframes cambioColorTexto {
+  0%, 100% {
+    color: #6497A8;
+  }
+  25% {
+    color: #8080BC;
+  }
+  50% {
+    color: #AF69A8;
+  }
+  75% {
+    color: #DB9E3A;
+  }
+}
+
+/* Responsive: pantallas pequeñas */
+@media (max-width: 767px) {
+  .logo-container {
+    order: 2;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+
+  .logo-container a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: cambioLogo 12s infinite;
+    opacity: 0;
+  }
+
+  .logo-container img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .textoSobre {
+    order: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .tituloP {
+    text-align: center;
+  }
+
+  .textoSobre p {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* Responsive: pantallas medianas */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .logo-container {
+    order: 2;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+
+  .logo-container a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: cambioLogo 12s infinite;
+    opacity: 0;
+  }
+
+  .logo-container img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .textoSobre {
+    order: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .tituloP {
+    text-align: center;
+  }
+
+  .textoSobre p {
+    text-align: center;
+  }
+}
+
+/* Responsive section valores */ 
+@media (max-width: 767px) {
+  .sectionValores .col-lg-4 {
+    text-align: center;
+  }
+
+  .sectionValores .col-lg-4 h2 {
+    text-align: center;
+  }
+
+  .sectionValores .col-lg-4 p {
+    text-align: center;
+  }
 }
 
 /* Estilos footer */

@@ -121,6 +121,9 @@ export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior, rutaAt
     const btnSiguiente = document.getElementById("btnSiguiente");
     const btnAnterior = document.getElementById("btnAnterior");
     const btnAtras = document.getElementById("btnAtras");
+    const popup = document.getElementById("miPopup");
+    const btnIrRegistro = document.getElementById("btnIrRegistro");
+    const btnCerrarPopup = document.getElementById("btnCerrarPopup");
 
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioLogueado = usuarios.find(u => u.logged);
@@ -131,8 +134,9 @@ export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior, rutaAt
         if (usuarioLogueado) {
           window.location.href = rutaSiguiente;
         } else {
-          alert("Debes iniciar sesión para continuar.");
-          window.location.href = "../../vistas/registro.html";
+          // Mostrar popup
+          popup.classList.remove("popup-oculto");
+          popup.classList.add("popup-visible");
         }
       });
     }
@@ -148,17 +152,29 @@ export function condicionarBotonesNavegacion(rutaSiguiente, rutaAnterior, rutaAt
       });
     }
 
-    // Botón Atrás (módulo anterior)
+    // Botón Atrás
     if (btnAtras) {
       btnAtras.addEventListener("click", () => {
         if (usuarioLogueado) {
           window.location.href = rutaAtras;
         } else {
-          alert("Debes iniciar sesión para volver al módulo anterior.");
-          window.location.href = "../../vistas/registro.html";
+          // Mostrar popup
+          popup.classList.remove("popup-oculto");
+          popup.classList.add("popup-visible");
         }
       });
     }
+
+    // Botón "Ir a Registro"
+    btnIrRegistro.addEventListener("click", () => {
+      window.location.href = "../../vistas/registro.html";
+    });
+
+    // Botón "Cerrar"
+    btnCerrarPopup.addEventListener("click", () => {
+      popup.classList.remove("popup-visible");
+      popup.classList.add("popup-oculto");
+    });
   });
 }
 

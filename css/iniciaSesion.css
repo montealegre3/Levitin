@@ -98,3 +98,58 @@ button:hover {
 .registrar p a:hover {
     text-decoration: underline;
 }
+
+/* Estilos modal Bienvenid@ */
+.popup-oculto {
+  display: none;
+}
+
+.popup-visible {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+.popup-bienvenida {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid #6497A8;
+  width: 90%;
+  height: 68%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.titulo-bienvenida {
+  color: #6497A8;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-comenzar {
+  font-size: 1rem;
+  background-color: #6497A8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  max-width: 150px;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+}
+
+.imagen-personajes {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}

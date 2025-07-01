@@ -1,13 +1,23 @@
-body {
-    padding-top: 80px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos del header */ 
+body{
+    background-color: #000;
+    background-image: url(../../assets/fondo-madonna.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
 
+/* Estilos header */
 .logo{
-    width: 219px;
-    height: 106px;
-    background-image: url(../../assets/logo-anaranjado.png);
+    width: 150px;
+    height: 100px;
+    background-image: url(../../assets/logo-blanco.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -18,21 +28,21 @@ body {
 }
 
 .navbar{
-    background-color: white;
+     background-color: rgba(0, 0, 0, 0.414);
 }
 
 .nav-link{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
-    color: #DB9E3A;
+    color: #ffffff;
 }
 
 .nav-link:hover{
-    color: #DB9E3A;
+    color: #b6b6b6;
 }
 
 .dropdown-item{
-    color: #DB9E3A;
+    color: #6497A8;
 }
 
 .dropdown-menu .submenu{
@@ -68,20 +78,20 @@ body {
 
 .dropdown-submenu {
     position: relative;
-}
+  }
   
-.dropdown-submenu .dropdown-menu {
+  .dropdown-submenu .dropdown-menu {
     top: 0;
     margin-top: 0;
     display: none;
     left: auto !important;
     right: 100% !important;
     transform: translateX(-1px);
-}
+  }
   
-.dropdown-submenu .dropdown-menu.show {
+  .dropdown-submenu .dropdown-menu.show {
     display: block;
-}
+  }
 
 .user-menu-container {
     top: 50px;
@@ -89,7 +99,7 @@ body {
 }
 
 #icon {
-    text-decoration: none; 
+    text-decoration: none;
     align-items: center;
     cursor: pointer;
 }
@@ -105,18 +115,17 @@ body {
 h3 {
     font-family: 'Archivo Narrow', sans-serif;
     text-decoration: none;
-    color:   #DB9E3A;
+    color: #ffffff;
     display: block;
     margin: 0;
     font-size: 23px; 
 }
 
 /* Estilos del menú lateral */
-
 .user-menu {
     position: fixed;
     top: 0;
-    right: -250px; 
+    right: -250px;
     width: 250px;
     height: 100%;
     background: white;
@@ -213,21 +222,32 @@ h6 {
 
 /* Estilos formulario */
 .formulario-contenido {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.414)), url(../../assets/fondo-madonna.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  backdrop-filter: blur(6px);
+  background-color: #ddd;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.formulario-contenido {
+  text-align: center;
+}
+
+.tituloForm,
+.parrafo {
+  text-align: center;
+}
+
+.form-check-label {
+  text-align: left;
+  display: block;
 }
 
 form#form {
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #ffffff;
 }
 
 .tab {
@@ -253,21 +273,21 @@ form#form {
 }
 
 h1 {
-  color: #ffffff;
+  color:  #DB9E3A;
   font-size: 2.2rem;
   margin-bottom: 40px;
   text-align: center;
 }
 
-h5 {
-  color: #ffffff;
+.tituloForm {
+  color:  #DB9E3A;
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
 
 
 .parrafo {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.1rem;
   text-align: justify;
   margin-bottom: 20px;
@@ -283,13 +303,13 @@ h5 {
 }
 
 .form-check-label {
-  color: #ffffff;
+  color: #000000;
   font-size: 1rem;
 }
 
 .btn2 {
   font-size: 1.1rem;
-  background-color: #DB9E3A;
+  background-color:  #DB9E3A;
   color: white;
   padding: 10px 30px;
   border-radius: 6px;
@@ -300,13 +320,13 @@ h5 {
 }
 
 .btn2:hover {
-  background-color: #b98d47;
+  background-color:  #b37e29;
 }
 
 
 /* Botón de volver */
 #btnVolver {
-  background-color: #DB9E3A;
+  background-color:  #DB9E3A;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -314,7 +334,7 @@ h5 {
   font-family: 'Archivo Narrow', sans-serif;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(129, 129, 129, 0.397);
 }
 
 /* Estilos modal de resultados */ 
