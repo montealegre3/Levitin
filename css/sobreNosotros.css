@@ -2,6 +2,15 @@ body {
     padding-top: 80px;
 }
 
+.logo{
+    width: 219px;
+    height: 106px;
+    background-image: url(../assets/logo-azul.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
 /* Estilos del header */
 .menu{
     padding-top: 50px;

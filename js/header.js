@@ -84,7 +84,7 @@ function header() {
                       <div class="user-menu-container d-flex align-items-center ms-3">
                         <a href="#" id="icon" class="d-flex align-items-center">
                           <img src="./assets/user-icon.webp" alt="Usuario" class="user-icon">
-                          <h3 class="mb-0 ms-2">Mi perfil</h3>
+                          <h3 class="mb-0 ms-2 d-none d-md-block">Mi perfil</h3>
                         </a>
                       </div>
                   </div>
