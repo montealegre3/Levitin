@@ -509,3 +509,31 @@ h5{
 .col-md-5 .list-inline-item i{
     font-size: 1.5rem;
 }
+
+/* Header responsive */ 
+/* Menu lateral */
+@media (max-width: 767.98px) {
+  .user-menu {
+    width: 70%;
+    right: -100%;
+  }
+
+  .user-menu.show {
+    right: 0;
+  }
+}
+
+/* Submenu de módulos */
+@media (max-width: 767.98px) {
+  .dropdown-submenu .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+    box-shadow: none;
+  }
+}
+
+/* Para evitar otro tipo de desbordamientos */
+html, body {
+  overflow-x: hidden;
+}

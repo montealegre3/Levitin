@@ -374,7 +374,7 @@ function header() {
                       </li>
                     </ul>
                   </div>
-                   <!-- Icono usuario alineado a la derecha -->
+                  <!-- Icono usuario alineado a la derecha -->
                       <div class="user-menu-container d-flex align-items-center ms-3">
                         <a href="#" id="icon" class="d-flex align-items-center">
                           <img src="../../assets/user-icon.webp" alt="Usuario" class="user-icon">
