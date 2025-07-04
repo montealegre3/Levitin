@@ -225,15 +225,15 @@ function header() {
                           </li>
                         </ul>
                       </li>
-                    </ul>
-                  </div>
-                   <!-- Icono usuario alineado a la derecha -->
-                      <div class="user-menu-container d-flex align-items-center ms-3">
+                      <!-- Icono usuario alineado a la derecha -->
+                      <li class="user-menu-container d-flex align-items-center ms-3">
                         <a href="#" id="icon" class="d-flex align-items-center">
                           <img src="../assets/user-icon.webp" alt="Usuario" class="user-icon">
                           <h3 class="mb-0 ms-2">Mi perfil</h3>
                         </a>
-                      </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </nav>
         </div>
@@ -372,15 +372,15 @@ function header() {
                           </li>
                         </ul>
                       </li>
-                    </ul>
-                  </div>
-                  <!-- Icono usuario alineado a la derecha -->
-                      <div class="user-menu-container d-flex align-items-center ms-3">
+                      <!-- Icono usuario alineado a la derecha -->
+                      <li class="user-menu-container d-flex align-items-center ms-3">
                         <a href="#" id="icon" class="d-flex align-items-center">
                           <img src="../../assets/user-icon.webp" alt="Usuario" class="user-icon">
                           <h3 class="mb-0 ms-2">Mi perfil</h3>
                         </a>
-                      </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </nav>
         </div>

@@ -38,6 +38,8 @@ body{
 
 .navbar{
      background-color: rgba(0, 0, 0, 0.414);
+     backdrop-filter: blur(0.6rem);
+    -webkit-backdrop-filter: blur(0.6rem);
 }
 
 .nav-link{
