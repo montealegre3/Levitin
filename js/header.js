@@ -78,15 +78,15 @@ function header() {
                             </li>
                           </ul>
                         </li>
+                         <!-- Icono usuario alineado a la derecha -->
+                        <li class="user-menu-container d-flex align-items-center ms-3">
+                          <a href="#" id="icon" class="d-flex align-items-center">
+                            <img src="./assets/user-icon.webp" alt="Usuario" class="user-icon">
+                            <h3 class="mb-0 ms-2">Mi perfil</h3>
+                          </a>
+                        </li>
                       </ul>
                     </div>
-                    <!-- Icono usuario alineado a la derecha -->
-                      <div class="user-menu-container d-flex align-items-center ms-3">
-                        <a href="#" id="icon" class="d-flex align-items-center">
-                          <img src="./assets/user-icon.webp" alt="Usuario" class="user-icon">
-                          <h3 class="mb-0 ms-2 d-none d-md-block">Mi perfil</h3>
-                        </a>
-                      </div>
                   </div>
                 </nav>
           </div>
@@ -163,7 +163,7 @@ function header() {
         <div class="col-lg-12 menu">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
                 <div class="container">
-                  <a class="navbar-brand" href="../../">
+                  <a class="navbar-brand" href="../">
                     <div class="logo"></div>
                   </a>
 
@@ -174,13 +174,13 @@ function header() {
                   <div class="collapse navbar-collapse nav-underline justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">               
                       <li class="nav-item">
-                        <a id="btnRegistro" class="nav-link" aria-current="page" href="../../vistas/registro.html">Registrarse</a>
+                        <a id="btnRegistro" class="nav-link" aria-current="page" href="../vistas/registro.html">Registrarse</a>
                       </li>
                       <li class="nav-item">
-                        <a id="btnIniciar" class="nav-link" href="../../vistas/iniciaSesion.html">Iniciar sesión</a>
+                        <a id="btnIniciar" class="nav-link" href="../vistas/iniciaSesion.html">Iniciar sesión</a>
                       </li>
                       <li class="nav-item">
-                        <a id="btnAbout" class="nav-link" href="../../vistas/sobreNosotros.html">Sobre Nosotros</a>
+                        <a id="btnAbout" class="nav-link" href="../vistas/sobreNosotros.html">Sobre Nosotros</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a id="btnModulos" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -190,37 +190,37 @@ function header() {
                           <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Módulo 1: introducción a la psicología de la música</a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                              <li><a href="../../vistas/modulo1/animacion1.html" class="dropdown-item">Introducción</a></li>
-                              <li><a href="../../vistas/modulo1/tema1.html" class="dropdown-item">Tema 1</a></li>
-                              <li><a href="../../vistas/modulo1/tema2.html" class="dropdown-item">Tema 2</a></li>
-                              <li><a href="../../vistas/modulo1/tema3.html" class="dropdown-item">Tema 3</a></li>
+                              <li><a href="../vistas/modulo1/animacion1.html" class="dropdown-item">Introducción</a></li>
+                              <li><a href="../vistas/modulo1/tema1.html" class="dropdown-item">Tema 1</a></li>
+                              <li><a href="../vistas/modulo1/tema2.html" class="dropdown-item">Tema 2</a></li>
+                              <li><a href="../vistas/modulo1/tema3.html" class="dropdown-item">Tema 3</a></li>
                             </ul>
                           </li>
                           <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Módulo 2: percepción musical</a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                              <li><a href="../../vistas/modulo2/animacion2.html" class="dropdown-item">Introducción</a></li>
-                              <li><a href="../../vistas/modulo2/tema1.html" class="dropdown-item">Tema 1</a></li>
-                              <li><a href="../../vistas/modulo2/tema2.html" class="dropdown-item">Tema 2</a></li>
-                              <li><a href="../../vistas/modulo2/tema3.html" class="dropdown-item">Tema 3</a></li>
+                              <li><a href="../vistas/modulo2/animacion2.html" class="dropdown-item">Introducción</a></li>
+                              <li><a href="../vistas/modulo2/tema1.html" class="dropdown-item">Tema 1</a></li>
+                              <li><a href="../vistas/modulo2/tema2.html" class="dropdown-item">Tema 2</a></li>
+                              <li><a href="../vistas/modulo2/tema3.html" class="dropdown-item">Tema 3</a></li>
                             </ul>
                           </li>
                           <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Módulo 3: música y emociones</a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                              <li><a href="../../vistas/modulo3/animacion3.html" class="dropdown-item">Introducción</a></li>
-                              <li><a href="../../vistas/modulo3/tema1.html" class="dropdown-item">Tema 1</a></li>
-                              <li><a href="../../vistas/modulo3/tema2.html" class="dropdown-item">Tema 2</a></li>
-                              <li><a href="../../vistas/modulo3/tema3.html" class="dropdown-item">Tema 3</a></li>
+                              <li><a href="../vistas/modulo3/animacion3.html" class="dropdown-item">Introducción</a></li>
+                              <li><a href="../vistas/modulo3/tema1.html" class="dropdown-item">Tema 1</a></li>
+                              <li><a href="../vistas/modulo3/tema2.html" class="dropdown-item">Tema 2</a></li>
+                              <li><a href="../vistas/modulo3/tema3.html" class="dropdown-item">Tema 3</a></li>
                             </ul>
                           </li>
                           <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Módulo 4: música y memoria</a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                              <li><a href="../../vistas/modulo4/animacion4.html" class="dropdown-item">Introducción</a></li>
-                              <li><a href="../../vistas/modulo4/tema1.html" class="dropdown-item">Tema 1</a></li>
-                              <li><a href="../../vistas/modulo4/tema2.html" class="dropdown-item">Tema 2</a></li>
-                              <li><a href="../../vistas/modulo4/tema3.html" class="dropdown-item">Tema 3</a></li>
+                              <li><a href="../vistas/modulo4/animacion4.html" class="dropdown-item">Introducción</a></li>
+                              <li><a href="../vistas/modulo4/tema1.html" class="dropdown-item">Tema 1</a></li>
+                              <li><a href="../vistas/modulo4/tema2.html" class="dropdown-item">Tema 2</a></li>
+                              <li><a href="../vistas/modulo4/tema3.html" class="dropdown-item">Tema 3</a></li>
                             </ul>
                           </li>
                         </ul>
@@ -230,7 +230,7 @@ function header() {
                    <!-- Icono usuario alineado a la derecha -->
                       <div class="user-menu-container d-flex align-items-center ms-3">
                         <a href="#" id="icon" class="d-flex align-items-center">
-                          <img src="../../assets/user-icon.webp" alt="Usuario" class="user-icon">
+                          <img src="../assets/user-icon.webp" alt="Usuario" class="user-icon">
                           <h3 class="mb-0 ms-2">Mi perfil</h3>
                         </a>
                       </div>
@@ -255,19 +255,19 @@ function header() {
               <li class="mb-3">
                   <h6>Módulos aprobados</h6>
                   <div id="modulo1" class="d-flex justify-content-between align-items-center">
-                      <a href="../../vistas/modulo1/animacion1.html"><p>Módulo 1</p></a>
+                      <a href="../vistas/modulo1/animacion1.html"><p>Módulo 1</p></a>
                       <i class="estado-modulo fs-5"></i>
                   </div>
                   <div id="modulo2" class="d-flex justify-content-between align-items-center">
-                      <a href="../../vistas/modulo2/animacion2.html"><p>Módulo 2</p></a>
+                      <a href="../vistas/modulo2/animacion2.html"><p>Módulo 2</p></a>
                       <i class="estado-modulo fs-5"></i>
                   </div>
                   <div id="modulo3" class="d-flex justify-content-between align-items-center">
-                      <a href="../../vistas/modulo3/animacion3.html"><p>Módulo 3</p></a>
+                      <a href="../vistas/modulo3/animacion3.html"><p>Módulo 3</p></a>
                       <i class="estado-modulo fs-5"></i>
                   </div>
                   <div id="modulo4" class="d-flex justify-content-between align-items-center">
-                      <a href="../../vistas/modulo4/animacion4.html"><p>Módulo 4</p></a>
+                      <a href="../vistas/modulo4/animacion4.html"><p>Módulo 4</p></a>
                       <i class="estado-modulo fs-5"></i>
                   </div>
               </li>
