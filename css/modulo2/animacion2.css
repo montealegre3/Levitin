@@ -239,10 +239,11 @@ section#introduccion {
     display: flex;
     flex-direction: column;
     align-items: center;  
-    justify-content: center; 
     text-align: left;
+    justify-content: center; 
     color: #fff;
-    padding: 0 5%;
+    padding: 120px 5% 60px;
+    margin-bottom: 60px;
 }
 
 #introduccion h1 {
@@ -256,6 +257,7 @@ section#introduccion {
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
+    width: 100%;
 }
 
 .botones {
