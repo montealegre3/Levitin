@@ -238,11 +238,13 @@ section#introduccion {
     display: flex;
     flex-direction: column;
     align-items: center;  
-    justify-content: center; 
     text-align: left;
     color: #fff;
-    padding: 0 5%;
+    padding: 120px 5% 40px; /* espacio arriba para el header */
 }
+
+
+
 
 #introduccion h1 {
     font-size: 3rem;
