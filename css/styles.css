@@ -362,12 +362,6 @@ h5{
 
 /* Header responsive */ 
 
-.navbar .container {
-  max-width: 100%;
-  padding-left: 1rem;
-  padding-right: 2rem;
-}
-
 /* Menu lateral */
 @media (max-width: 767.98px) {
   .user-menu {
