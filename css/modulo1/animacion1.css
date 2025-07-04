@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #000;
     background-image: url(../../assets/fondo-bethoveen.webp);
     background-repeat: no-repeat;
@@ -234,6 +234,7 @@ h6 {
 
 /* Estilos section "introducción" */
 section#introduccion {
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     align-items: center;  
