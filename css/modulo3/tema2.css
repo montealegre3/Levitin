@@ -238,6 +238,34 @@ h1{
     max-width: 1100px;
 }
 
+/* Estilos btn navegation final */
+.btn2{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    background-color: #AF69A8;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px;
+    border: none; 
+}
+
+.btn2:hover{
+    background-color: #9a5d94;
+    color: white;
+}
+
+@media (max-width: 576px) {
+  #botones-navegacion-final .text-start,
+  #botones-navegacion-final .text-end {
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  #botones-navegacion-final .btn2 {
+    width: 100%;
+  }
+}
 
 /* Estilos footer */
 .footer{

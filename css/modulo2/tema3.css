@@ -251,7 +251,7 @@ h1{
 .btn2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
-    background-color: #6a6a9b; 
+    background-color: #8080BC;
     color: white;
     margin-top: 100px;
     margin-bottom: -50px;
@@ -262,7 +262,7 @@ h1{
 }
 
 .btn2:hover{
-    background-color: #8080BC;
+    background-color: #6a6a9b;
     color: white;
 }
 
@@ -285,6 +285,35 @@ h1{
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem; 
+}
+
+/* Estilos btn navegation final */
+.btn2Nf{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    background-color: #8080BC; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px;
+    border: none; 
+}
+
+.btn2Nf:hover{
+    background-color: #8c8ccd;
+    color: white;
+}
+
+@media (max-width: 576px) {
+  #botones-navegacion-final .text-start,
+  #botones-navegacion-final .text-end {
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  #botones-navegacion-final .btn2Nf {
+    width: 100%;
+  }
 }
 
 /* Estilos footer */

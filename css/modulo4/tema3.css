@@ -280,8 +280,24 @@ h3{
     }
   }
 
-/* Estilos formulario */
+/* Estilos section 1 */
+.btnLink{
+    font-family: 'Archivo Narrow', sans-serif;
+    background-color: #DB9E3A; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 4px; 
+    border: none;
+} 
 
+h2{
+    color: #DB9E3A;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 25px;
+}
+
+/* Estilos formulario */
 .card-text {
     text-align: justify;
     font-size: 0.9rem;
@@ -320,30 +336,39 @@ h3{
 }
 
 /* Estilos navegation-buttons */
-
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem; 
 }
 
-/* Estilos section 1 */
-
-.btnLink{
+/* Estilos btn navegation final */
+.btn2Nf{
     font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
     background-color: #DB9E3A; 
     color: white;
     padding: 10px 20px;
     font-size: 1rem; 
-    border-radius: 4px; 
-    border: none;
-} 
-
-h2{
-    color: #DB9E3A;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 25px;
+    border-radius: 4px;
+    border: none; 
 }
 
+.btn2Nf:hover{
+    background-color: #ebaf4d; 
+    color: white;
+}
+
+@media (max-width: 576px) {
+  #botones-navegacion-final .text-start,
+  #botones-navegacion-final .text-end {
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  #botones-navegacion-final .btn2Nf {
+    width: 100%;
+  }
+}
 
 /* Estilos footer */
 
