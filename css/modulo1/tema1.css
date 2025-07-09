@@ -256,7 +256,7 @@ h6 {
 }
 
 
-/* Estilos btn1 */
+/* Estilos btn navegation final */
 .btn2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1.2rem;
@@ -273,12 +273,23 @@ h6 {
     color: white;
 }
 
+@media (max-width: 576px) {
+  #botones-navegacion-final .text-start,
+  #botones-navegacion-final .text-end {
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  #botones-navegacion-final .btn2 {
+    width: 100%;
+  }
+}
+
 /* Estilos navigation-bar */
 .btn{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1rem;
 }
-
 
 /* Estilos footer */
 
